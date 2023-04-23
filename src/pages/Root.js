@@ -1,7 +1,8 @@
-import Navbar from "../components/Navbar"
-import { Outlet } from "react-router-dom"
+import Navbar from "../components/Main-components/Navbar";
+import Footer from "../components/Main-components/Footer";
+import { Outlet } from "react-router-dom";
 
-const RootLayout = () => {
+export const HeaderRootLayout = () => {
 
  return (
   <>
@@ -11,4 +12,12 @@ const RootLayout = () => {
 )
 }
 
-export default RootLayout
+export const FooterRootLayout = () => {
+  return (
+    <>
+    <Outlet/>
+    <Footer/>
+    </>
+  )
+}
+

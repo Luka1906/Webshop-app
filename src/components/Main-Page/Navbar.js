@@ -5,8 +5,8 @@ import SearchForm from "./SearchForm";
 
 const Navbar = () => {
   return (
-    <div className="w-screen bg-yellow-900 text-slate-100">
-      <nav className="flex  justify-between items-center  px-10">
+    <div className="w-screen fixed h-1/6 top-0 z-50 bg-yellow-900 text-slate-100">
+      <nav className="flex justify-between items-center  px-10">
         <div className="flex gap-1.5">
           <select className="outline-none cursor-pointer bg-transparent "name="languages">
             <option value="EN">EN</option>

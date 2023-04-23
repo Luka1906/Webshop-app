@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Lato";
+    src: url('./assets/fonts/Lato/Lato-Regular.ttf');
+    font-family:  "Bold-Lato";
+    src: url('./assets//fonts//Lato/Lato-Black.ttf')
+    
+}
+
+@layer components {
+    .card {
+        width: 300px;
+    }
+}
+
+

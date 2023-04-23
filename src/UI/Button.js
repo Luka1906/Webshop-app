@@ -1,8 +1,9 @@
+
 const Button = (props) => {
   return (
     <button
       type={props.type || "submit"}
-      className=" flex items-center  bg-slate-100 px-9 py-2 rounded-md  uppercase lett tracking-wide "
+      className=" flex items-center  bg-white text-black opacity-85 px-3 py-1 md:px-9 md:py-2 rounded-md   lett tracking-wide "
     >
       {props.children}
     </button>
