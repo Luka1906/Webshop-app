@@ -1,7 +1,7 @@
 
 const Card = (props) => {
     return (
-        <div className="bg-gray-100  rounded-md p-6 shadow-card-shadow">{props.children}</div>
+        <div className={`bg-white shadow-card-shadow ${props.className}`}>{props.children}</div>
     )
 }
 

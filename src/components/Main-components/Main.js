@@ -5,6 +5,7 @@ import PopularItems from "./Popularitems";
 
 
 import Recommended from "./Recommended";
+import Footer from "./Footer";
 
 const MainPage = () => {
 return (
@@ -17,6 +18,7 @@ return (
     </div>
     <PopularItems/>
     <Recommended/>
+    <Footer/>
    
 
     </>

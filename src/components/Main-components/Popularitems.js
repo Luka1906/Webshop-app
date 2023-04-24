@@ -12,7 +12,7 @@ import FindMore from "./FindMore";
 
 const PopularItems = () => {
   return (
-    <div className="">
+    <>
       <Banner>
         <h1 className=" text-paragraph text-primary-color-red md:w-[45rem] w-5/6 ">
           New Serbian jerseys added to Spring Sale! Up to 60% off online &
@@ -41,7 +41,7 @@ const PopularItems = () => {
       </div>
       <SliderContainer />
       <FindMore/>
-    </div>
+    </>
   );
 };
 

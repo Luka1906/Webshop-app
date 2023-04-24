@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import  Logo  from "./Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faBagShopping } from "@fortawesome/free-solid-svg-icons";
 import SearchForm from "./SearchForm";
