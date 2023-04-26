@@ -1,19 +1,43 @@
-import image1 from "../../assets/images/image1.jpeg";
-// import image2 from "../assets/images/image4.jpeg";
-import image3 from "../../assets/images/image5.jpeg";
-import image6 from "../../assets/images/image6.jpeg";
-// import image4 from "../assets/images/image5.jpeg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+
 import Button from "../../UI/Button";
 import SliderContainer from "./SliderContainer";
 import Banner from "../../UI/Banner";
 import FindMore from "./FindMore";
+import {PopUpFirst, PopUpSecond} from "./PopUp";
+import { useState } from "react";
+import {AnimatePresence } from "framer-motion";
+
 
 const PopularItems = () => {
+const [isVisible, setIsVisible] = useState(false);
+const [isVisible1, setIsVisible1] = useState(false)
+
+const visibleHandler = () => {
+  setIsVisible(true);
+  document.body.style.overflow = "hidden"
+}
+
+const hiddenHandler = () => {
+  setIsVisible(false);
+  document.body.style.overflow="scroll"
+}
+
+const visibleHandler1 = () => {
+  setIsVisible1(true);
+  document.body.style.overflow = "hidden"
+}
+
+const hiddenHandler1 = () => {
+  setIsVisible1(false);
+  document.body.style.overflow="scroll"
+}
+
+
+
+
   return (
     <>
-      <Banner>
+      <Banner onShow = {visibleHandler}>
         <h1 className=" text-paragraph text-primary-color-red md:w-[45rem] w-5/6 ">
           New Serbian jerseys added to Spring Sale! Up to 60% off online &
           in-store
@@ -40,7 +64,16 @@ const PopularItems = () => {
         </div>
       </div>
       <SliderContainer />
-      <FindMore/>
+      <FindMore onShow1={visibleHandler1}/>
+      <AnimatePresence>
+      {isVisible && <PopUpFirst onClose= {hiddenHandler}/>}
+      </AnimatePresence>
+      <AnimatePresence>
+      {isVisible1 && <PopUpSecond onClose1= {hiddenHandler1}/>}
+      </AnimatePresence>
+     
+
+   
     </>
   );
 };

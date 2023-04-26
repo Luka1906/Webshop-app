@@ -1,13 +1,12 @@
 import  Logo  from "./Logo";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faBagShopping } from "@fortawesome/free-solid-svg-icons";
 import SearchForm from "./SearchForm";
 import bag from "../../assets/images/bag.svg";
 import user from "../../assets/images/user.svg";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({pathname}) => {
   return (
-    <div className="absolute w-full h-1/7 top-0 z-50   text-black">
+    <div className={`${pathname === "/"? "absolute top-0 z-50": ""} w-full h-1/7 text-black`}>
       <nav className="flex justify-between items-center   px-10">
         <div className="flex flex-col items-center ">
           <div className="flex gap-1.5 ">
@@ -26,7 +25,8 @@ const Navbar = () => {
 
         <div className="flex items-center gap-5 ">
           <p className="hidden lg:block">About Us</p>
-          <p className="hidden lg:block">Categories</p>
+          <Link to="products"><p className="hidden lg:block">Categories</p></Link>
+
           <img src={user} />
           <p>Sign in</p>
           <div className="flex">

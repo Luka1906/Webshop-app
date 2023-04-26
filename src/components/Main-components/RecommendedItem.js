@@ -1,4 +1,4 @@
-import { width } from "@mui/system";
+
 import Card from "../../UI/Card";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,7 +22,7 @@ const RecommendedItem = ({ image, description, price }) => {
           alt="recommended.jpeg"
         />
         <div className="h-[8rem] flex flex-col items-center justify-around">
-          <p className="font-bold-lato">{description}</p>
+          <p className="font-semi-bold-lato">{description}</p>
           <Link className="flex items-center gap-2">
            <p> Buy now</p> <FontAwesomeIcon icon={faArrowRight} />
           </Link>

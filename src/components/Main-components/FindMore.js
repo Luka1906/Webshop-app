@@ -1,10 +1,10 @@
 import Banner from "../../UI/Banner"
 
-const FindMore = () => {
+const FindMore = (props) => {
 return (
     <div className="my-12">
-    <Banner>
-        <h1 className=" text-paragraph text-primary-color-red md:w-[45rem] w-5/6 " >Member perk: 20% off $100 + free shipping </h1>
+    <Banner onShow1={props.onShow1}>
+        <h1 className=" text-paragraph text-primary-color-red md:w-[45rem] w-5/6 " >Member perk: Enter for a chance to win $100 gift card </h1>
         <p  className="text-sm">Valid on every alcohol beverages</p>
     </Banner>
   <div className=" relative shadow-image-shadow bg-rakija-pic h-[40rem] bg-contain bg-center w-[60rem] m-auto flex flex-col justify-center items-center">

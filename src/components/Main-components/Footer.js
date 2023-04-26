@@ -13,7 +13,7 @@ const Footer = () => {
     <div className=" bg-gray-50 shadow-image-shadow  h-[82vh] relative top-6">
       <div className="text-[0.7rem] flex justify-around relative top-6">
         <div className="flex flex-col gap-4">
-          <h2 className="font-bold-lato">SHOP</h2>
+          <h2 className="font-semi-bold-lato">SHOP</h2>
           <p>Tradition souvenirs</p>
           <p>Sport</p>
           <p>Kids</p>
@@ -22,7 +22,7 @@ const Footer = () => {
           <p></p>
         </div>
         <div className="flex flex-col gap-4">
-          <h2 className="font-bold-lato">INFO</h2>
+          <h2 className="font-semi-bold-lato">INFO</h2>
           <p>Career at SerbShop</p>
           <p>About us</p>
           <p>Shipping Rates</p>
@@ -31,7 +31,7 @@ const Footer = () => {
           <p></p>
         </div>
         <div className="flex flex-col gap-4">
-          <h2 className="font-bold-lato">HELP</h2>
+          <h2 className="font-semi-bold-lato">HELP</h2>
           <p>Customer Service</p>
           <p>My Account</p>
           <p>Legal & Privacy</p>
@@ -43,7 +43,7 @@ const Footer = () => {
           <p></p>
         </div>
         <div className="flex flex-col gap-4">
-          <h2 className="font-bold-lato">CONTACT</h2>
+          <h2 className="font-semi-bold-lato">CONTACT</h2>
           <p>Phone number: 332/436/54-21</p>
           <p>Store Location</p>
         </div>

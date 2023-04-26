@@ -3,17 +3,44 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Lato";
-    src: url('./assets/fonts/Lato/Lato-Regular.ttf');
-    font-family:  "Bold-Lato";
-    src: url('./assets//fonts//Lato/Lato-Black.ttf')
-    
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato/Lato-Regular.ttf");
+  font-family: "Bold-Lato";
+  src: url("./assets//fonts//Lato/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: "Semi-Bold-Lato";
+  src: url("./assets//fonts//Lato/Lato-Bold.ttf");
 }
 
 @layer components {
-    .card {
-        width: 300px;
-    }
+  .card {
+    width: 300px;
+  }
+  .paginationBttns {
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .paginationBttns a {
+    padding: 0.8rem;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+
+    color: rgb(58, 58, 58);
+    cursor: pointer;
+  }
+
+  .paginationBttns a:hover {
+    color: #e50010;
+    background: rgb(255 237 213);
+  }
+
+  .paginationActive a {
+    color: #e50010;
+    background: rgb(255 237 213);
+  }
 }
-
-

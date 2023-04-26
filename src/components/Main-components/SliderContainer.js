@@ -27,7 +27,7 @@ const SliderContainer = () => {
   return (
     <div className="my-28 lg:w-[60rem]  m-auto ">
 
-      <p className="text-[1.5rem] text-center lg:text-justify my-12 font-bold-lato w-full">
+      <p className="text-[1.5rem] text-center lg:text-justify my-12 font font-semi-bold-lato w-full">
         Popular items
       </p>
 

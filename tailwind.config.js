@@ -18,8 +18,8 @@ module.exports = {
       },
       backgroundImage: {
         'main-wallpaper': "url('././assets/images/wallpaper/image1.jpeg')",
-        'jersey-pic': "url('././assets/images/image6.jpeg')",
-        'rakija-pic':  "url('././assets/images/rakija5.jpeg')"
+        'jersey-pic': "url('././assets/images/items/image4.jpeg')",
+        'rakija-pic':  "url('././assets/images/items/image7.jpeg')"
 
        
       },
@@ -27,6 +27,7 @@ module.exports = {
         "background-shadow": "inset 0 0 0 1000px rgba(0,0,0,0.25)",
         "image-shadow": "inset 0 0 0 1000px rgba(0,0,0,0.20)",
         "card-shadow": "0 2px 8px rgba(0,0,0,0.50)",
+        "backdrop-shadow": "inset 0 0 0 1000px rgba(0,0,0,0.65)"
     
       },
       fontSize: {
@@ -37,7 +38,8 @@ module.exports = {
       },
       fontFamily: {
         "lato": ['Lato', 'sans-serif'],
-        "bold-lato": ['Bold-Lato', 'sans-serif']
+        "bold-lato": ['Bold-Lato', 'sans-serif'],
+        "semi-bold-lato": ["Semi-Bold-Lato", 'sans-seri'],
       }
     },
   },
