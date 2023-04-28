@@ -8,15 +8,15 @@ const LogoBlack = () => {
           <clipPath id="998bb000a2">
               <path
                   d="M 165.75 158.042969 L 299.25 158.042969 L 299.25 237.542969 L 165.75 237.542969 Z M 165.75 158.042969 "
-                  clip-rule="nonzero" />
+                   />
           </clipPath>
           <clipPath id="c2dc000cd0">
               <path
                   d="M 165.75 158.042969 L 228 158.042969 L 228 237.542969 L 165.75 237.542969 Z M 165.75 158.042969 "
-                  clip-rule="nonzero" />
+                 />
           </clipPath>
       </defs>
-      <g fill="#000" fill-opacity="1">
+      <g fill="#000" fillOpacity="1">
           <g transform="translate(94.690794, 221.739405)">
               <g>
                   <path
@@ -24,7 +24,7 @@ const LogoBlack = () => {
               </g>
           </g>
       </g>
-      <g fill="#000" fill-opacity="1">
+      <g fill="#000" fillOpacity="1">
           <g transform="translate(149.828734, 221.739405)">
               <g>
                   <path
@@ -32,18 +32,18 @@ const LogoBlack = () => {
               </g>
           </g>
       </g>
-      <g clip-path="url(#998bb000a2)">
+      <g>
           <path fill="transparent"
               d="M 225.914062 158.113281 L 210.601562 178.308594 L 201.417969 190.425781 L 196.324219 197.15625 L 195.238281 198.605469 L 188.925781 206.917969 L 184.734375 212.457031 L 182.898438 214.867188 L 179.457031 219.398438 L 165.75 237.46875 L 299.25 237.46875 L 299.25 158.113281 Z M 225.914062 158.113281 "
-              fill-opacity="1" fill-rule="nonzero" />
+              fillOpacity="1" />
       </g>
-      <g clip-path="url(#c2dc000cd0)">
+      <g >
           <path fill="#000000" stroke= "#000000"
-    stroke-width="1.5px"
+    
               d="M 227.234375 158.113281 L 211.042969 179.472656 L 202.144531 191.226562 L 196.632812 198.476562 L 196.375 198.8125 L 190.347656 206.789062 L 185.613281 213.003906 L 184.191406 214.867188 L 180.335938 219.941406 L 167.066406 237.46875 L 165.75 237.46875 L 179.457031 219.398438 L 182.898438 214.867188 L 184.710938 212.433594 L 188.925781 206.890625 L 195.238281 198.582031 L 196.296875 197.15625 L 201.417969 190.425781 L 210.601562 178.308594 L 225.914062 158.113281 Z M 227.234375 158.113281 "
-              fill-opacity="1" fill-rule="nonzero" />
+              fillOpacity="1" />
       </g>
-      <g fill="#232b2b" fill-opacity="1">
+      <g fill="#232b2b" fillOpacity="1">
           <g transform="translate(199.323889, 224.457012)">
               <g>
                   <path
@@ -51,7 +51,7 @@ const LogoBlack = () => {
               </g>
           </g>
       </g>
-      <g fill="#232b2b" fill-opacity="1">
+      <g fill="#232b2b" fillOpacity="1">
           <g transform="translate(225.626207, 224.457012)">
               <g>
                   <path 
@@ -59,7 +59,7 @@ const LogoBlack = () => {
               </g>
           </g>
       </g>
-      <g fill="#232b2b" fill-opacity="1">
+      <g fill="#232b2b" fillOpacity="1">
           <g transform="translate(257.982345, 224.457012)">
               <g>
                   <path
@@ -67,7 +67,7 @@ const LogoBlack = () => {
               </g>
           </g>
       </g>
-      <g fill="#232b2b" fill-opacity="1">
+      <g fill="#232b2b" fillOpacity="1">
           <g transform="translate(291.361091, 224.457012)">
               <g>
                   <path

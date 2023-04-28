@@ -32,9 +32,6 @@ const hiddenHandler1 = () => {
   document.body.style.overflow="scroll"
 }
 
-
-
-
   return (
     <>
       <Banner onShow = {visibleHandler}>

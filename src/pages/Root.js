@@ -10,6 +10,8 @@ export const HeaderRootLayout = () => {
   <>
    <Navbar pathname={location.pathname}/>
    <Outlet/>
+   <Footer/>
+
    
 
 
@@ -17,12 +19,5 @@ export const HeaderRootLayout = () => {
 )
 }
 
-export const FooterRootLayout = () => {
-  return (
-    <>
-    <Outlet/>
-    <Footer/>
-    </>
-  )
-}
+
 

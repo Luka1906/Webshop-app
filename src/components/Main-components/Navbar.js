@@ -1,5 +1,4 @@
 import  Logo  from "./Logo";
-import SearchForm from "./SearchForm";
 import bag from "../../assets/images/bag.svg";
 import user from "../../assets/images/user.svg";
 import { Link } from "react-router-dom";
@@ -20,7 +19,7 @@ const Navbar = ({pathname}) => {
             <Logo />
           </div>
 
-          <SearchForm />
+
         </div>
 
         <div className="flex items-center gap-5 ">

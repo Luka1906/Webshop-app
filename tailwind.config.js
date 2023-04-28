@@ -12,6 +12,7 @@ module.exports = {
         'primary-color-dark-orange': "#F79326",
         'primary-color-red': "#e50010",
         'text-color': "#232b2b",
+        'bg-color': "	#FFFAFA"
        
         
        
