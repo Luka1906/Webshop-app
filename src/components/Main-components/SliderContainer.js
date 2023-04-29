@@ -25,8 +25,6 @@ const SliderContainer = () => {
   };
 
   const popularItems = AllItems.filter((item) => item.type === "popular");
-  const search_parameters = Object.keys(Object.assign({}, ...AllItems));
-  console.log(search_parameters)
 
   return (
     <div className="my-28 lg:w-[60rem]  m-auto ">
@@ -40,8 +38,8 @@ const SliderContainer = () => {
             <div className="w-[220px]  mx-auto">
               <SliderItems
                 key={item.id}
-                image={item.image}
-                description={item.description}
+                image={item.images.image}
+                title={item.description}
                 price={item.price}
               />
             </div>

@@ -11,8 +11,8 @@ return (
            {recommendedItems.map((item)=> (
             <RecommendedItem
             key={item.id}
-            image={item.image}
-            description={item.description}
+            image={item.images.image}
+            title={item.description}
             price={item.price}
             />
            ))}

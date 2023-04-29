@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-const RecommendedItem = ({ image, description, price }) => {
+const RecommendedItem = ({ image, title, price }) => {
   return (
     <div className="relative top-24 m-auto h-[70vh]">
       <div className="text-sm text-white absolute right-[-1rem] top-[-1.5rem] bg-primary-color-red w-12 h-12 rounded-full flex items-center justify-center">
@@ -22,7 +22,7 @@ const RecommendedItem = ({ image, description, price }) => {
           alt="recommended.jpeg"
         />
         <div className="h-[8rem] flex flex-col items-center justify-around">
-          <p className="font-semi-bold-lato">{description}</p>
+          <p className="font-semi-bold-lato">{title}</p>
           <Link className="flex items-center gap-2">
            <p> Buy now</p> <FontAwesomeIcon icon={faArrowRight} />
           </Link>

@@ -55,7 +55,7 @@ const hiddenHandler1 = () => {
           </div>
           <div className="flex flex-col w-full items-center absolute bottom-12">
           <div className="text-sm font-extrabold text-paragraph  opacity-90">
-            <Button>Shop Now</Button>
+            <Button className="rounded-md  opacity-85  px-3 py-1 md:px-9 md:py-2 ">Shop Now</Button>
           </div>
         </div>
         </div>

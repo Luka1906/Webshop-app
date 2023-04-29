@@ -19,12 +19,14 @@ const Products = () => {
     .map((item) => {
       return (
         <Product
+          id={item.id}
           key={item.id}
-          image={item.image}
+          image={item.images.image}
           description={item.description}
           price={item.price}
           rating={item.rating}
           reviewsNumber={item.reviewsNumber}
+          discount={item.discount}
         />
       );
     });
