@@ -1,16 +1,19 @@
 import { AllItems } from "../../data/AllItems";
 import Product from "./Product";
 import Categories from "./Categories";
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 import ReactPaginate from "react-paginate";
 import SearchForm from "./SearchForm";
 
 
 const Products = () => {
-  const [items, setItems] = useState([...AllItems]);
-  const [pageNumber, setPageNumber] = useState(0);
-  const [title, setTitle] = useState("All");
 
+  const [items, setItems] = useState( AllItems);
+
+  const [pageNumber, setPageNumber] = useState (localStorage.getItem("currentPage"))
+  const [title, setTitle] = useState("All");
+  
+ 
   const itemsPerPage = 8;
   const currentItems = pageNumber * itemsPerPage;
 
@@ -27,28 +30,35 @@ const Products = () => {
           rating={item.rating}
           reviewsNumber={item.reviewsNumber}
           discount={item.discount}
+          setPageNumber={setPageNumber}
         />
       );
     });
 
   const pageCount = Math.ceil(items.length / itemsPerPage);
+  console.log(pageNumber)
 
   const changePageHandler = ({ selected }) => {
-    setPageNumber(selected);
+    setPageNumber(selected)
+    localStorage.setItem("currentPage", selected);
+     
   };
+
 
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [displayItems]);
 
+ 
   const shopCategories = [...new Set(AllItems.map((Val) => Val.category))];
 
   const filterItems = (itemCategory) => {
-    const newItem = AllItems.filter((item) => {
+   const newItem = AllItems.filter((item) => {
       return item.category === itemCategory;
     });
     setItems(newItem);
     setTitle(itemCategory);
+  
   };
 
   const searchItems = (searchInput) => {
@@ -71,6 +81,7 @@ const Products = () => {
       <Categories
         categories={shopCategories}
         setItems={setItems}
+        setPageNumber={setPageNumber}
         filterItems={filterItems}
         title={title}
         setTitle={setTitle}
@@ -84,11 +95,13 @@ const Products = () => {
       <ReactPaginate
         pageCount={pageCount}
         onPageChange={changePageHandler}
+        forcePage={pageNumber}
         containerClassName={"paginationBttns"}
         previousLinkClassName={"previousBttn"}
         nextLinkClassName={"nextBttn"}
         disabledClassName={"paginationDisabled"}
         activeClassName={"paginationActive"}
+    
       />
     </>
   );

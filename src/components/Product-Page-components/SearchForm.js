@@ -7,7 +7,7 @@ import { AllItems } from "../../data/AllItems";
 
 const SearchForm = ({searchItems, setTitle, setItems}) => {
   const location = useLocation();
-  console.log(location.pathname)
+
  
 
   const [searchInput, setSearchInput] = useState("")
@@ -16,7 +16,7 @@ const SearchForm = ({searchItems, setTitle, setItems}) => {
   const searchItemsHandler = (searchValue) => {
     setSearchInput(searchValue)
     searchItems(searchInput)
-    console.log(searchValue)
+
     }
   return (
     <div className="flex items-center justify-between"> 

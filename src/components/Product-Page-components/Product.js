@@ -13,7 +13,9 @@ const Product = ({
 
   return (
     <div className="relative border-[1.5px] border-stone-200 m-auto p-4 mb-5 h-[45vh]">
-      <Link to={`/products/${id}`}>
+      <Link
+      state={{discountPrice: discountPrice, id: id, description: description, price:price, image:image }}
+       to={`/products/${id}`}>
         <div
           style={{
             backgroundImage: `url(${image})`,

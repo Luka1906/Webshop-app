@@ -118,6 +118,13 @@ export const AllItems = [
     },
     description: "Puma Serbia Soccer Jersey",
     price: 150,
+    details: {
+      productDetails:
+        "The 2022 Serbia Home Jersey is a tribute to the 2015 U-20 team who were crowned champions at the U-20 World Cup. It was the first team  representing the country to win a FIFA competition title post-independence",
+      specification:
+        "Red base with gold accents taken from the 2015 winners' kit; Decorated with mini crosses; New Federation badge is sewn on; dryCELL technology wicks sweat; 100% Polyester.",
+    },
+
     rating: (
       <Rating
         name="half-rating-read"
@@ -129,7 +136,7 @@ export const AllItems = [
     ),
     reviewsNumber: 142,
     category: "Sport",
-    discount: 60
+    discount: 60,
   },
 
   {
@@ -142,6 +149,10 @@ export const AllItems = [
 
     description: "Scented St. Sava Soy Candle",
     price: 25.99,
+    details: {
+      productDetails: "The candle itself is made 100% with a natural soy wax blend and cotton wick. Choose between ambrosial fragrances such as Vanilla Bean, Comfort Spice, and Sea Breeze.NOTE! Keep burning candle within sight, and keep away from children and pets. Never burn the candle near flammable items.",
+      specification: `One size (3" × 3 2/8") (7.6cm × 8.25cm); 100% natural soy wax blend; Average burn time: 50-60 hours; 100% cotton wick`
+    },
     rating: (
       <Rating
         name="half-rating-read"
@@ -154,7 +165,7 @@ export const AllItems = [
     reviewsNumber: 9,
     category: "Souvenirs",
     type: "recommended",
-    discount: 0
+    discount: 0,
   },
   {
     id: 3,
@@ -165,6 +176,11 @@ export const AllItems = [
     },
     description: "Baby/Toddler Bib with Serbian symbols ",
     price: 25.99,
+    details: {
+      productDetails:
+        "Personalized with your child's name and baptismal date. This bib is made on demand and usually ships within 2-3 business days. One size fits most (up to 36 months).",
+      specification: "Machine washable on gentle cycle; Dryer safe; low heat tumble dry recommended; do not iron; 100% polyester fleece and printed in with baby-safe ink.",
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -176,7 +192,7 @@ export const AllItems = [
     ),
     reviewsNumber: 88,
     category: "Kids",
-    discount: 0
+    discount: 0,
   },
 
   {
@@ -186,9 +202,14 @@ export const AllItems = [
       image: image1,
       additionalImg: [additional10, additional11, additional12],
     },
-
     description: "Vintage Pocket Watch",
     price: 99.49,
+    details: {
+      productDetails:
+        "This personalized pocket watch makes for a perfect gift that will stand the test of time. With an outer casing made from premium alloy, this classic timepiece is precision powered by Japanese movement. All you need to do is pick a memory for the dial and make a gift that goes down in time.",
+      specification: "Choice of outer casing - Gold or Silver; Watch Shape: Round; Case Diameter: 2 inches; Hook Buckle clasp; 14.5 inch alloy chain; 3-hand analog Japanese Quartz® movement; One year manufacturers limited warranty",
+    },
+
     rating: (
       <Rating
         name="half-rating-read"
@@ -201,7 +222,7 @@ export const AllItems = [
     reviewsNumber: 25,
     category: "Souvenirs",
     type: "recommended",
-    discount: 30
+    discount: 30,
   },
 
   {
@@ -213,6 +234,10 @@ export const AllItems = [
     },
     description: "Serbia National Soccer Team Drawstring Bag",
     price: 19.99,
+    details: {
+      productDetails:"Need a place to store your belongings during the big Serbia game? This bag has drawstring straps that cinch the top, allowing you to easily access and carry your items. It features crisp graphics that will make it difficult for anyone to doubt your dedication. ",
+      specification: '100% Polyester; Printed graphicSize: 36x42cm / 14" X 16", suitable for most kids and adults; Two adjustable shoulder straps. One main compartment with drawstring closure; Thick drawstrings prevent digging into your shoulders and help reduce your shoulder burden.',
+    },
     rating: (
       <Rating
         name="half-rating-red"
@@ -224,7 +249,7 @@ export const AllItems = [
     ),
     reviewsNumber: 19,
     category: "Sport",
-    discount: 15
+    discount: 15,
   },
   {
     id: 6,
@@ -235,6 +260,10 @@ export const AllItems = [
     },
     description: "Serbia World Cup Qatar T-Shirt ",
     price: 22.99,
+    details: {
+      productDetails:"Customise your jersey with the name and number of your favourite Serbia player or even your own name. We can print name in the same style worn by the players.",
+      specification: 'Chest and sleeve print design; Regular fit; 100% Cotton',
+    },
     rating: (
       <Rating
         name="half-rating-read"
@@ -246,7 +275,7 @@ export const AllItems = [
     ),
     reviewsNumber: 155,
     category: "Sport",
-    discount: 0
+    discount: 0,
   },
   {
     id: 7,
@@ -258,6 +287,10 @@ export const AllItems = [
 
     description: "Serbia Flag Cap",
     price: 15.99,
+    details: {
+      productDetails:"Stay safe in the sun: Stop risking your health and safety by walking outdoors without adequate sun protection. Wear this comfortable hat during all outdoor activities to protect your skin from harmful UV rays",
+      specification: "100% Cotton; High quality polyester; Adjustable closure: One Size Fits Most; 100% Polyester Made. Lightweight / Durable / Smooth."
+    },
     rating: (
       <Rating
         name="half-rating-read"
@@ -270,7 +303,7 @@ export const AllItems = [
     reviewsNumber: 5,
     category: "Souvenirs",
     type: "popular",
-    discount: 0
+    discount: 0,
   },
   {
     id: 8,
@@ -281,6 +314,10 @@ export const AllItems = [
     },
     description: "Serbia Shoes with Flag Colors",
     price: 75.49,
+    details: {
+      productDetails:"Serbia Serbian Flag Funny Fashion Cool Personality Sport Running Shoes Casual Breathable Lightweight 3D Print Men Women Sneakers",
+      specification: "Wear resistant: This hiking shoes running shoes for men is made of good quality pu leather, lightweight and durable"
+    },
     rating: (
       <Rating
         name="half-rating-read"
@@ -293,7 +330,7 @@ export const AllItems = [
     reviewsNumber: 75,
     category: "Souvenirs",
     type: "popular",
-    discount: 10
+    discount: 10,
   },
   {
     id: 9,
@@ -305,6 +342,11 @@ export const AllItems = [
 
     description: "Smoki/Peanut Flips",
     price: 10.99,
+    details: {
+      productDetails:"Smoki Peanut-Flavored Snacks - 150 g bag. Do you have a craving for something crunchy? These peanut-flavored puffy snacks are the perfect snack to munch on anywhere anytime!Flips are a type of salty cornmeal grits with a dominant taste of peanuts.",
+      specification: "Ingredients: corn groats peanuts (22%) vegetable fat (palm) soy flour salt.This product may contain traces of nuts milk and cereals containing gluten."
+     
+    },
     rating: (
       <Rating
         name="no-value-read"
@@ -317,7 +359,7 @@ export const AllItems = [
     reviewsNumber: "464",
     category: "Food",
     type: "popular",
-    discount: 0
+    discount: 0,
   },
   {
     id: 10,
@@ -329,6 +371,10 @@ export const AllItems = [
 
     description: "Novak Djokovic T-Shirt",
     price: 30.99,
+    details: {
+      productDetails:"Colorful design perfect for all of you who loves Novak Djokovic, it can be also given as birthday or Halloween gift to your boyfriend or girlfriend, best friend and relative who also loves Novak Djokovic.",
+      specification: "100% combed ringspun cotton. The perfect fabric for a graphic tee and the softest in the business."
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -341,7 +387,7 @@ export const AllItems = [
     reviewsNumber: 7,
     category: "Souvenirs",
     type: "popular",
-    discount: 40
+    discount: 40,
   },
   {
     id: 11,
@@ -353,6 +399,10 @@ export const AllItems = [
 
     description: "Serbia Eagle Necklace",
     price: 45.49,
+    details: {
+      productDetails:"Serbia Eagle Necklace Women Gold or Silver, Serbian Flag Necklace, Traditional Serbian Jewelry, Flag of Serbia Pendant Necklace Gift",
+      specification: "100% waterproof and hypoallergenic; Pendant length: 2,5 cm; Chain length: 40 cm + 5 cm extension; Material gold: Brass + 18K gold plated; Material silver: Brass"
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -365,7 +415,7 @@ export const AllItems = [
     reviewsNumber: 3,
     category: "Souvenirs",
     type: "popular",
-    discount: 20
+    discount: 20,
   },
   {
     id: 12,
@@ -377,6 +427,10 @@ export const AllItems = [
 
     description: "Granny's Secret Ajvar",
     price: 20.99,
+    details: {
+      productDetails:"A true relish. This is ajvar, the most authentic speciality our land has to offer. Not to be eaten, but indulged in, this relish is prepared from traditionally roasted red peppers.",
+      specification: "Mild roasted pepper flavor; Gluten free, Vegan, Vegetarian, No sugar added, No additives"
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -389,7 +443,7 @@ export const AllItems = [
     reviewsNumber: 211,
     category: "Food",
     type: "popular",
-    discount: 0
+    discount: 0,
   },
   {
     id: 13,
@@ -397,10 +451,13 @@ export const AllItems = [
     images: {
       image: image14,
       additionalImg: [additional35, additional36],
-
     },
     description: "Slides with Serbian flag ",
     price: 25.49,
+    details: {
+      productDetails:"Our Slip-ons are custom-made-to-order and handcrafted to the highest quality standards.",
+      specification: "Features a full front-toe canvas Serbia print; Elastic stretch in-step for easy on-and-off use; Soft textile lining with lightweight construction for maximum comfort; High-quality canvas construction for everyday use and durable EVA outsole for exceptional traction"
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -413,8 +470,7 @@ export const AllItems = [
     reviewsNumber: "No ratings yet",
     category: "Souvenirs",
     type: "popular",
-    discount: 5
-    
+    discount: 5,
   },
   {
     id: 14,
@@ -423,8 +479,12 @@ export const AllItems = [
       image: image15,
       additionalImg: [additional37],
     },
-    description: "Opanci- traditional shoes",
+    description: "Opanci- traditional Serbian shoes",
     price: 99.99,
+    details: {
+      productDetails:"Vintage Serbian Opanak Leather Ethnic Folk Shoe. A very elegant and beautiful present for anyone who likes Serbian tradition and folklore.",
+      specification: "This pair is made of 50 % wool and 50% premium acrylic, that makes ideal yarn combination for socks and slippers. Opanke-slippers are wrapped with a wooden button with two adjustable lengths. The bottom of slippers is glued with shoe insole which makes them not slippery to walk and give it a long life."
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -437,8 +497,7 @@ export const AllItems = [
     reviewsNumber: 9,
     category: "Souvenirs",
     type: "popular",
-    discount: 50
-
+    discount: 50,
   },
   {
     id: 15,
@@ -449,6 +508,10 @@ export const AllItems = [
     },
     description: "Serbia Prayer Rope(black)",
     price: 25.99,
+    details: {
+      productDetails:"Black wool orthodox  prayer rope with 50/100/150 knots 8mm. It is made of blend acrylic and woolen yarn and black acrylic beads.",
+      specification: "Materials: wool acrylic yarn, Acrylic beads, Love, prayer"
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -460,8 +523,7 @@ export const AllItems = [
     ),
     reviewsNumber: 2,
     category: "Souvenirs",
-    discount: 0
-
+    discount: 0,
   },
   {
     id: 16,
@@ -473,6 +535,10 @@ export const AllItems = [
 
     description: "Lane Ground Biscuit ",
     price: 5.99,
+    details: {
+      productDetails:"#1 Selling Serbian Biscuit. Biscuits, Ground, Lane, Box 10.6 OZ All you need! There is nothing more tasteful than delicious homemade desserts made from ground lane and spiced with healthy optimism. Lane is all you need to free your imagination and to enjoy in infinite possibilities to be creative, to have fun and spend quality time with your family.",
+      specification: "Wheat flour, sugar, butter, soybean flour, vegetable oil(palm), honey, dextrose, whey powder, skimmed milk powder, raising agents(ammonium bicarbonate, sodium bicarbonate), salt, emulsifier (soya lecithin), vitamins (ascorbic acid, niacin, vitamin B6, thiamin), antioxidant (potassium metabisulfite), artificial flavor."
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -484,25 +550,27 @@ export const AllItems = [
     ),
     reviewsNumber: 343,
     category: "Food",
-    discount: 0
-   
+    discount: 0,
   },
   {
     id: 17,
     itemNumber: "# K9168397",
     images: {
-      image:image18,
+      image: image18,
       additionalImg: [additional40, additional41, additional69],
     },
     description: "Boy and Girl in Traditional Costumes Picture",
     price: 39.99,
+    details: {
+      productDetails:'This 5×7" photographic print with pearlized sheen is matted into an 8×10" black frame. Glass front frame has built-in easel-back table stand and hanging hooks.',
+     
+    },
     rating: (
       <Rating name="half-rating" value={4} precision={0.5} size="small" />
     ),
     reviewsNumber: 21,
     category: "Souvenirs",
-    discount: 15
-
+    discount: 15,
   },
   {
     id: 18,
@@ -513,12 +581,15 @@ export const AllItems = [
     },
     description: "Two Eagles Serbia Towel",
     price: 30.19,
+    details: {
+      productDetails:"This high-quality towel is embroidered with a two golden eagles, creating a thoughtful and sentimental keepsake that will be treasured for years to come.",
+      specification: "100% cotton, Egyptian cotton"
+    },
     rating: <Rating name="no-value-read" value={null} size="small" readOnly />,
     reviewsNumber: "No ratings yet",
     category: "Souvenirs",
     type: "recommended",
-    discount:15
-  
+    discount: 15,
   },
 
   {
@@ -530,6 +601,10 @@ export const AllItems = [
     },
     description: "Chips Way Gricko",
     price: 1.99,
+    details: {
+      productDetails:"Corn and potato sticks with tomato and paprika 40g.Unique ketchup and paprika taste. To enjoy every moment.",
+     
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -541,18 +616,21 @@ export const AllItems = [
     ),
     reviewsNumber: 16,
     category: "Food",
-    discount: 0
-
+    discount: 0,
   },
   {
     id: 20,
     itemNumber: "# L2568437",
     images: {
       image: image21,
-      additionalImg: [additional44]
+      additionalImg: [additional44],
     },
     description: "Lozovaca rakija(serbian brandy)",
     price: 27.99,
+    details: {
+      productDetails:" An exclusive combination of tradition, experience and innovation. Serbian brandy(rakija) represents the harmony of intense taste and elegance. It is produced with a carefully selected combination of long-aged distillates in oak barrels. You will be enchanted by the complex and rich body, the aromas of cocoa and chocolate and the unique taste with a long and gentle finish.",
+      specification: "NETO: 0,7L; ALC: 45,0% VOL"
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -564,8 +642,7 @@ export const AllItems = [
     ),
     reviewsNumber: 59,
     category: "Alcohol",
-    discount: 0
-  
+    discount: 0,
   },
 
   {
@@ -573,10 +650,14 @@ export const AllItems = [
     itemNumber: "# A8888497",
     images: {
       image: image22,
-      additionalImg: [additional45]
+      additionalImg: [additional45],
     },
     description: "Girls Dress with Custom Serbian Name Embroidered",
     price: 52.99,
+    details: {
+      productDetails:"Girls Cotton Ribbed Balerina Dress- Personalized",
+      specification: "This super soft dress is made of 5 oz; 100% combed ringspun cotton; Machine Wash Cold; Tumble Dry Low; Do Not Bleach"
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -588,18 +669,21 @@ export const AllItems = [
     ),
     reviewsNumber: 5,
     category: "Kids",
-    discount: 10
-  
+    discount: 10,
   },
   {
     id: 22,
     itemNumber: "# Y2068497",
     images: {
       image: image23,
-      additionalImg: [additional46]
+      additionalImg: [additional46],
     },
     description: "Serbia Winter Hat(grey)",
     price: 25.99,
+    details: {
+      productDetails:"Expand your wardrobe with a classic embroidered beanie. Finished with a pom-pom on top, it offers tons of warmth and comfort, and is destined to find its way into all your favorite cold-weather looks.",
+      specification: '100% acrylic; 12" (30.5 cm) knit; Fold-over 3″ (7.6 cm) cuff; Pom-pom on top; One size fits most; Blank product sourced from Vietnam.'
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -611,18 +695,21 @@ export const AllItems = [
     ),
     reviewsNumber: 31,
     category: "Souvenirs",
-    discount: 0
-   
+    discount: 0,
   },
   {
     id: 23,
     itemNumber: "# P1484997",
     images: {
       image: image24,
-      additionalImg: [additional47]
+      additionalImg: [additional47],
     },
-    description: "Funny Serbia Tumbler 16 oz",
+    description: "Funny Serbia Tumbler 20 oz",
     price: 25.99,
+    details: {
+      productDetails:"I Am Serbian I Can Not Keep Calm Large 20 oz Stainless Steel Travel",
+      specification: 'Double-wall vacuum insulated for maximum heat and cold retention; Made of durable, BPA- and lead-free stainless steel; Holds 20 oz. with clear lid; Measures 3.5” dia. x7”H to fit most standard cup holders; Hand wash only'
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -634,8 +721,7 @@ export const AllItems = [
     ),
     reviewsNumber: 1,
     category: "Souvenirs",
-    discount: 30
-    
+    discount: 30,
   },
   {
     id: 24,
@@ -643,10 +729,13 @@ export const AllItems = [
     images: {
       image: image25,
       additionalImg: [additional48],
-
     },
     description: "Serbia Gold Sequins Pillow",
     price: 45.09,
+    details: {
+      productDetails:"Super comfy Serbia sequins pillow made for kids age 3-9",
+      specification: 'Design/Printable Area: One side; Pillow Size: 15.5″ x 15.5″ Case Only; Color: Gold, Rose Gold, Silver; Cover Material: Sequin; Care: Spot Clean/Handwash Only; 14" Insert NOT Included - Optional Insert Sold Separately'
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -658,8 +747,7 @@ export const AllItems = [
     ),
     reviewsNumber: 19,
     category: "Kids",
-    discount: 0
-
+    discount: 0,
   },
   {
     id: 25,
@@ -670,6 +758,10 @@ export const AllItems = [
     },
     description: "Serbia Wodden Cutting Board",
     price: 65.99,
+    details: {
+      productDetails:"Serbia Custom Engraved Bamboo Chopping Board with serbian coat of arms(both rounded and flat available)",
+      specification: "The size of the board is (13 inches x 9.5 inches) (33 cm x 24). This is a 100% bamboo cutting board."
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -681,8 +773,7 @@ export const AllItems = [
     ),
     reviewsNumber: 23,
     category: "Souvenirs",
-    discount: 10
-
+    discount: 10,
   },
   {
     id: 26,
@@ -693,6 +784,10 @@ export const AllItems = [
     },
     description: "Set of 5 Čokanjs(shot glasses for serbian brandy/rakija)",
     price: 25.99,
+    details: {
+      productDetails:"Set of 5 cokanjs (traditional shot glass for serbian brandy rakija) hand-painted with acrylic paint.",
+      specification: "Material: Glass; Dimensions: 18 x 17cm; Volume: 0.03-0.05 l"
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -704,8 +799,7 @@ export const AllItems = [
     ),
     reviewsNumber: 94,
     category: "Alcohol",
-    discount: 0
-    
+    discount: 0,
   },
   {
     id: 27,
@@ -716,6 +810,10 @@ export const AllItems = [
     },
     description: "Serbian Baby Girl Folk Costume",
     price: 89.99,
+    details: {
+      productDetails:"We make small traditional baby costume for your babies. A very elegant and beautiful present for anyone who likes Serbian tradition and folklore .",
+      specification: "Set includes: Dress : cotton; Jelek : cotton; CARE: gently handwash in warm water, using a wool detergent. Reshape and let it dry."
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -727,8 +825,7 @@ export const AllItems = [
     ),
     reviewsNumber: 17,
     category: "Kids",
-    discount:40
-   
+    discount: 40,
   },
   {
     id: 28,
@@ -739,6 +836,10 @@ export const AllItems = [
     },
     description: "Stark Bananica",
     price: 0.49,
+    details: {
+      productDetails:"Krem Banana (Stark) CASE, 25gx40, Chocolate Covered Banana Flavored Dessert.made of high quality, natural raw materials with a coating of chocolate made with cocoa. One of the ingredients (agar-agar) is extracted from seaweed. It is used for gelling and gives the bananas their well-known foamy structure. Each bar is not only sweet, but is part of a healthy diet.",
+      specification: "Ingredients: Sugar, glucose syrup, water, cocoa liquor, dextrose, cocoa butter, gelling agent (agar-agar), citric acid, egg white powder (0.16%), emulsifiers (soya lecithin, polyglycerol polyricinoleate, flavors, natural flavors, color, and safflower extract. Chocolate coating contains min. 56% cocoa parts. Product may contain traces of peanuts and nuts gluten and milk."
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -750,8 +851,7 @@ export const AllItems = [
     ),
     reviewsNumber: 332,
     category: "Food",
-    discount: 0
-   
+    discount: 0,
   },
 
   {
@@ -763,6 +863,9 @@ export const AllItems = [
     },
     description: "Book 'Prepiska sa rodbinom'(Nikola Tesla)",
     price: 14.99,
+    details: {
+      productDetails:"Nikola Tesla was Serbian inventor, electrical engineer, mechanical engineer, and futurist best known for his contributions to the design of the modern alternating current (AC) electricity supply system",
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -774,18 +877,21 @@ export const AllItems = [
     ),
     reviewsNumber: 9,
     category: "Souvenirs",
-    discount: 0
-
+    discount: 0,
   },
   {
     id: 30,
     itemNumber: "# M1468746",
     images: {
       image: image31,
-      additionalImg: [additional57, additional58]
+      additionalImg: [additional57, additional58],
     },
     description: "Teddy Bear with Custom Serbian Name",
     price: 35.99,
+    details: {
+      productDetails:'Created to put ear-to-ear smiles on any child, these stuffed animals come with a playful attitude and customizable tees. Each plushie is 8" tall, features polyester and plastic pellet stuffing, while their tees are 100% cotton. Perfect for ages 3+',
+      specification: ".: Toy: Cotton and polyester blend; Stuffing: Polyester fiber and plastic pellets; T-shirt: 100% Cotton; Sewn-in label"
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -797,8 +903,7 @@ export const AllItems = [
     ),
     reviewsNumber: 28,
     category: "Kids",
-    discount: 25
-    
+    discount: 25,
   },
   {
     id: 31,
@@ -809,6 +914,10 @@ export const AllItems = [
     },
     description: "Burgundy Folk Apron",
     price: 55.99,
+    details: {
+      productDetails:"Wearing this folk apron, every woman will be able to feel the tradition and her roots. And maybe the food will become as tasty as our grandmothers and great-grandmothers used to make it! The apron is richly decorated with embroidered floral motifs. The perfect gift for anyone who loves tradition! An apron is one of the most widespread parts of women's folk costume in the territory of Serbia. Other names for the apron are preglječa, preglejječa or prjlječa and they were woven from wool and worn by women over their dresses.",
+
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -820,8 +929,7 @@ export const AllItems = [
     ),
     reviewsNumber: 19,
     category: "Souvenirs",
-    discount: 50
- 
+    discount: 50,
   },
   {
     id: 32,
@@ -832,6 +940,10 @@ export const AllItems = [
     },
     description: "Wooden Flask Saint George Light Wood 16 oz",
     price: 65.29,
+    details: {
+      productDetails:"A flat, flask or buklia is a specially made brandy bottle. It has a special purpose and a special place in the household and tradition. When announcing the wedding, it is called by the book. A bottle with motifs of the Saint is an excellent festive gift that will be long-lasting and useful to the host!",
+      specification: "Volume: 16oz; Material: Maple wood; Production technique: Engraving or printing; Dimensions: 27 x 18 x 8 cm; Coated with beeswax; The coat of arms of Serbia on the other side"
+    },
     rating: (
       <Rating
         name="half-rating"
@@ -843,8 +955,7 @@ export const AllItems = [
     ),
     reviewsNumber: 13,
     category: "Souvenirs",
-    discount: 0
-
+    discount: 0,
   },
 
   {
@@ -854,16 +965,19 @@ export const AllItems = [
       image: image34,
       additionalImg: [additional62],
     },
- 
+
     description: "Medovaca(honey flavored serbian brandy-rakija)",
     price: 25.99,
+    details: {
+      productDetails:"Honey brandy-rakija (Medovaca) is widely popular alcohol drink in Serbia. Brandy has a golden-yellow color with a slight scent and aftertaste of honey. It is considered good for circulation, as a remedy against bacteria and viruses, for improving appetite and digestion. It is recommended to be consumed chilled.",
+      specification: "NETO: 0,7L, ALC: 30,0% VOL"
+    },
     rating: (
       <Rating name="half-rating" value={4.6} precision={0.2} size="small" />
     ),
     reviewsNumber: 54,
     category: "Alcohol",
-    discount: 5
-
+    discount: 5,
   },
   {
     id: 34,
@@ -875,13 +989,16 @@ export const AllItems = [
 
     description: "Baby Body Athlete FC Partizan Coat Of Arms",
     price: 10.19,
+    details: {
+      productDetails:"Partizan  baby shirt for the youngest football lovers.",
+      specification: "100% cotton"
+    },
     rating: (
       <Rating name="half-rating" value={4.1} precision={0.5} size="small" />
     ),
     reviewsNumber: 9,
     category: "Kids",
-    discount: 0
-    
+    discount: 0,
   },
   {
     id: 35,
@@ -892,65 +1009,76 @@ export const AllItems = [
     },
     description: "Rubinov vinjak - serbian brandy",
     price: 19.99,
+    details: {
+      productDetails:'The Serbian Vinjak in the region Krusevac with old wine-making traditions, known since the Roman epoch. Here they produce the best Serbian wines, also a spirit drink called for a long time "Cognac". Thus after the protection of French producers called "Vinjak". The most famous sort is "rubin", a dry drink of brown color. Vinjak VS is consumed as an aperitif during eating." -Wine Globe',
+      specification: "40% ALC/VOL. 1L VS Brandy, Serbia"
+    },
     rating: (
       <Rating name="half-rating" value={4.2} precision={0.5} size="small" />
     ),
     reviewsNumber: 77,
     category: "Alcohol",
-    discount: 0
-   
+    discount: 0,
   },
   {
     id: 36,
     itemNumber: "# D1444491",
     images: {
       image: image37,
-      additionalImg: [additional65]
+      additionalImg: [additional65],
     },
 
     description: "Sljivovica - plum serbian brandy(rakija)",
     price: 29.49,
+    details: {
+      productDetails:"Fresh and vibrant taste of vanilla and almond. A mellow beginning that leads in a smooth, clean finish. Perfect on the rocks or chilled on its own. Produced from fresh, sound, ripe plums in Beograd, Serbia. ",
+      specification: "40% ALC/VOL. 1L"
+    },
     rating: (
       <Rating name="half-rating" value={4.7} precision={0.2} size="small" />
     ),
     reviewsNumber: 291,
     category: "Alcohol",
-    discount: 0
-  
+    discount: 0,
   },
   {
     id: 37,
     itemNumber: "# H54639973",
     images: {
       image: image38,
-      additionalImg: [additional66]
+      additionalImg: [additional66],
     },
     description: "Cotton Sweatuit Serbia Navy Blue",
     price: 72.49,
+    details: {
+      productDetails:'A set of tracksuits and a sweatshirt. Original peak tracksuit in navy blue color. The tracksuit can be of the most daring character because it contains the coat of arms on the chest and the inscription "SERBIJA" on the back, but it is also excellent for all sports and leisure activities.',
+      specification: "Men's tracksuit / tracksuit set; Material: Microfiber; Convenient and comfortable to wear during training or walking; Sporty but also very modern tracksuit set"
+    },
     rating: (
       <Rating name="half-rating" value={4.5} precision={0.2} size="small" />
     ),
     reviewsNumber: "No reviews yet",
     category: "Sport",
-    discount:10
-
+    discount: 10,
   },
   {
     id: 38,
     itemNumber: "# A0673490",
     images: {
       image: image39,
-      additionalImg: [additional67, additional68] 
+      additionalImg: [additional67, additional68],
     },
     description: "FC Red Star Baby Pajamas Long Sleeve",
     price: 12.49,
+    details: {
+      productDetails:"Baby pajamas with the Red Star FC print",
+      specification: "Baby pajamas with the Red Star FC print; Material composition: 100% cotton; Dricker buckle"
+    },
     rating: (
       <Rating name="half-rating" value={null} precision={0.2} size="small" />
     ),
     reviewsNumber: "No reviews yet",
     category: "Kids",
-    discount: 0
- 
+    discount: 0,
   },
 ];
-
