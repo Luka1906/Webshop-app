@@ -11,9 +11,11 @@ return (
            {recommendedItems.map((item)=> (
             <RecommendedItem
             key={item.id}
+            id={item.id}
             image={item.images.image}
             title={item.description}
             price={item.price}
+            discount={item.discount}
             />
            ))}
         </div>

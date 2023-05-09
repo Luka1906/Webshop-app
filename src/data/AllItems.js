@@ -114,7 +114,7 @@ export const AllItems = [
     itemNumber: "# A6539056",
     images: {
       image: image4,
-      additionalImg: [additional1, additional2, additional3],
+      additionalImg: [image4,additional1, additional2, additional3],
     },
     description: "Puma Serbia Soccer Jersey",
     price: 150,
@@ -144,7 +144,7 @@ export const AllItems = [
     itemNumber: "# A1249030",
     images: {
       image: image2,
-      additionalImg: [additional4, additional5, additional6],
+      additionalImg: [image2,additional4, additional5, additional6],
     },
 
     description: "Scented St. Sava Soy Candle",
@@ -172,7 +172,7 @@ export const AllItems = [
     itemNumber: "# C1269795",
     images: {
       image: image19,
-      additionalImg: [additional7, additional8, additional9],
+      additionalImg: [image19,additional7, additional8, additional9],
     },
     description: "Baby/Toddler Bib with Serbian symbols ",
     price: 25.99,
@@ -200,7 +200,7 @@ export const AllItems = [
     itemNumber: "# A1448497",
     images: {
       image: image1,
-      additionalImg: [additional10, additional11, additional12],
+      additionalImg: [image1, additional10, additional11, additional12],
     },
     description: "Vintage Pocket Watch",
     price: 99.49,
@@ -230,7 +230,7 @@ export const AllItems = [
     itemNumber: "# F9068499",
     images: {
       image: image5,
-      additionalImg: [additional13, additional14, additional15],
+      additionalImg: [image5, additional13, additional14, additional15],
     },
     description: "Serbia National Soccer Team Drawstring Bag",
     price: 19.99,
@@ -256,7 +256,7 @@ export const AllItems = [
     itemNumber: "# L1088497",
     images: {
       image: image6,
-      additionalImg: [additional16, additional17, additional18],
+      additionalImg: [image6, additional16, additional17, additional18],
     },
     description: "Serbia World Cup Qatar T-Shirt ",
     price: 22.99,
@@ -282,7 +282,7 @@ export const AllItems = [
     itemNumber: "# A1068117",
     images: {
       image: image8,
-      additionalImg: [additional19, additional20, additional21],
+      additionalImg: [image8, additional19, additional20, additional21],
     },
 
     description: "Serbia Flag Cap",
@@ -310,7 +310,7 @@ export const AllItems = [
     itemNumber: "# M8868497",
     images: {
       image: image9,
-      additionalImg: [additional22, additional23, additional24],
+      additionalImg: [image9, additional22, additional23, additional24],
     },
     description: "Serbia Shoes with Flag Colors",
     price: 75.49,
@@ -337,7 +337,7 @@ export const AllItems = [
     itemNumber: "# M1008497",
     images: {
       image: image10,
-      additionalImg: [additional25, additional26],
+      additionalImg: [image10, additional25, additional26],
     },
 
     description: "Smoki/Peanut Flips",
@@ -366,7 +366,7 @@ export const AllItems = [
     itemNumber: "# A1998497",
     images: {
       image: image11,
-      additionalImg: [additional27, additional28, additional29],
+      additionalImg: [image11, additional27, additional28, additional29],
     },
 
     description: "Novak Djokovic T-Shirt",
@@ -394,7 +394,7 @@ export const AllItems = [
     itemNumber: "# B1008499",
     images: {
       image: image12,
-      additionalImg: [additional30, additional31, additional32],
+      additionalImg: [image12, additional30, additional31, additional32],
     },
 
     description: "Serbia Eagle Necklace",
@@ -422,7 +422,7 @@ export const AllItems = [
     itemNumber: "# A1468497",
     images: {
       image: image13,
-      additionalImg: [additional33, additional34],
+      additionalImg: [image13, additional33, additional34],
     },
 
     description: "Granny's Secret Ajvar",
@@ -450,7 +450,7 @@ export const AllItems = [
     itemNumber: "# R1265497",
     images: {
       image: image14,
-      additionalImg: [additional35, additional36],
+      additionalImg: [image14, additional35, additional36],
     },
     description: "Slides with Serbian flag ",
     price: 25.49,
@@ -477,9 +477,9 @@ export const AllItems = [
     itemNumber: "# A9968499",
     images: {
       image: image15,
-      additionalImg: [additional37],
+      additionalImg: [image15, additional37],
     },
-    description: "Opanci- traditional Serbian shoes",
+    description: "Opanci - ethno shoes",
     price: 99.99,
     details: {
       productDetails:"Vintage Serbian Opanak Leather Ethnic Folk Shoe. A very elegant and beautiful present for anyone who likes Serbian tradition and folklore.",
@@ -504,7 +504,7 @@ export const AllItems = [
     itemNumber: "# B14888497",
     images: {
       image: image16,
-      additionalImg: [additional38],
+      additionalImg: [image16, additional38],
     },
     description: "Serbia Prayer Rope(black)",
     price: 25.99,
@@ -530,7 +530,7 @@ export const AllItems = [
     itemNumber: "# C14611497",
     images: {
       image: image17,
-      additionalImg: [additional39],
+      additionalImg: [image17, additional39],
     },
 
     description: "Lane Ground Biscuit ",
@@ -557,7 +557,7 @@ export const AllItems = [
     itemNumber: "# K9168397",
     images: {
       image: image18,
-      additionalImg: [additional40, additional41, additional69],
+      additionalImg: [image18, additional40, additional41, additional69],
     },
     description: "Boy and Girl in Traditional Costumes Picture",
     price: 39.99,
@@ -577,7 +577,7 @@ export const AllItems = [
     itemNumber: "# J5469495",
     images: {
       image: image3,
-      additionalImg: [additional42],
+      additionalImg: [image3,additional42],
     },
     description: "Two Eagles Serbia Towel",
     price: 30.19,
@@ -597,7 +597,7 @@ export const AllItems = [
     itemNumber: "# C9968497",
     images: {
       image: image20,
-      additionalImg: [additional43],
+      additionalImg: [image20, additional43],
     },
     description: "Chips Way Gricko",
     price: 1.99,
@@ -623,7 +623,7 @@ export const AllItems = [
     itemNumber: "# L2568437",
     images: {
       image: image21,
-      additionalImg: [additional44],
+      additionalImg: [image21, additional44],
     },
     description: "Lozovaca rakija(serbian brandy)",
     price: 27.99,
@@ -650,7 +650,7 @@ export const AllItems = [
     itemNumber: "# A8888497",
     images: {
       image: image22,
-      additionalImg: [additional45],
+      additionalImg: [image22, additional45],
     },
     description: "Girls Dress with Custom Serbian Name Embroidered",
     price: 52.99,
@@ -676,7 +676,7 @@ export const AllItems = [
     itemNumber: "# Y2068497",
     images: {
       image: image23,
-      additionalImg: [additional46],
+      additionalImg: [image23, additional46],
     },
     description: "Serbia Winter Hat(grey)",
     price: 25.99,
@@ -702,7 +702,7 @@ export const AllItems = [
     itemNumber: "# P1484997",
     images: {
       image: image24,
-      additionalImg: [additional47],
+      additionalImg: [image24, additional47],
     },
     description: "Funny Serbia Tumbler 20 oz",
     price: 25.99,
@@ -728,7 +728,7 @@ export const AllItems = [
     itemNumber: "# B1228490",
     images: {
       image: image25,
-      additionalImg: [additional48],
+      additionalImg: [image25, additional48],
     },
     description: "Serbia Gold Sequins Pillow",
     price: 45.09,
@@ -754,7 +754,7 @@ export const AllItems = [
     itemNumber: "# A1000004",
     images: {
       image: image26,
-      additionalImg: [additional49],
+      additionalImg: [image26, additional49],
     },
     description: "Serbia Wodden Cutting Board",
     price: 65.99,
@@ -779,7 +779,7 @@ export const AllItems = [
     id: 26,
     itemNumber: "# M1438436",
     images: {
-      additionalImg: [additional50, additional51],
+      additionalImg: [image27, additional50, additional51],
       image: image27,
     },
     description: "Set of 5 Čokanjs(shot glasses for serbian brandy/rakija)",
@@ -806,7 +806,7 @@ export const AllItems = [
     itemNumber: "# K8465457",
     images: {
       image: image28,
-      additionalImg: [additional52, additional53],
+      additionalImg: [image28, additional52, additional53],
     },
     description: "Serbian Baby Girl Folk Costume",
     price: 89.99,
@@ -832,7 +832,7 @@ export const AllItems = [
     itemNumber: "# A1494397",
     images: {
       image: image29,
-      additionalImg: [additional54],
+      additionalImg: [image29, additional54],
     },
     description: "Stark Bananica",
     price: 0.49,
@@ -859,7 +859,7 @@ export const AllItems = [
     itemNumber: "# L1077497",
     images: {
       image: image30,
-      additionalImg: [additional56],
+      additionalImg: [image30, additional56],
     },
     description: "Book 'Prepiska sa rodbinom'(Nikola Tesla)",
     price: 14.99,
@@ -884,7 +884,7 @@ export const AllItems = [
     itemNumber: "# M1468746",
     images: {
       image: image31,
-      additionalImg: [additional57, additional58],
+      additionalImg: [image31, additional57, additional58],
     },
     description: "Teddy Bear with Custom Serbian Name",
     price: 35.99,
@@ -910,7 +910,7 @@ export const AllItems = [
     itemNumber: "# K1321497",
     images: {
       image: image32,
-      additionalImg: [additional59, additional60],
+      additionalImg: [image32, additional59, additional60],
     },
     description: "Burgundy Folk Apron",
     price: 55.99,
@@ -936,7 +936,7 @@ export const AllItems = [
     itemNumber: "# Z1008490",
     images: {
       image: image33,
-      additionalImg: [additional61],
+      additionalImg: [image33, additional61],
     },
     description: "Wooden Flask Saint George Light Wood 16 oz",
     price: 65.29,
@@ -963,7 +963,7 @@ export const AllItems = [
     itemNumber: "# Y1465927",
     images: {
       image: image34,
-      additionalImg: [additional62],
+      additionalImg: [image34, additional62],
     },
 
     description: "Medovaca(honey flavored serbian brandy-rakija)",
@@ -984,7 +984,7 @@ export const AllItems = [
     itemNumber: "# A1668410",
     images: {
       image: image35,
-      additionalImg: [additional63],
+      additionalImg: [image35, additional63],
     },
 
     description: "Baby Body Athlete FC Partizan Coat Of Arms",
@@ -1005,7 +1005,7 @@ export const AllItems = [
     itemNumber: "# R1464447",
     images: {
       image: image36,
-      additionalImg: [additional64],
+      additionalImg: [image36, additional64],
     },
     description: "Rubinov vinjak - serbian brandy",
     price: 19.99,
@@ -1025,7 +1025,7 @@ export const AllItems = [
     itemNumber: "# D1444491",
     images: {
       image: image37,
-      additionalImg: [additional65],
+      additionalImg: [image37, additional65],
     },
 
     description: "Sljivovica - plum serbian brandy(rakija)",
@@ -1046,9 +1046,9 @@ export const AllItems = [
     itemNumber: "# H54639973",
     images: {
       image: image38,
-      additionalImg: [additional66],
+      additionalImg: [image38, additional66],
     },
-    description: "Cotton Sweatuit Serbia Navy Blue",
+    description: "Cotton Sweatuit Serbia",
     price: 72.49,
     details: {
       productDetails:'A set of tracksuits and a sweatshirt. Original peak tracksuit in navy blue color. The tracksuit can be of the most daring character because it contains the coat of arms on the chest and the inscription "SERBIJA" on the back, but it is also excellent for all sports and leisure activities.',
@@ -1066,7 +1066,7 @@ export const AllItems = [
     itemNumber: "# A0673490",
     images: {
       image: image39,
-      additionalImg: [additional67, additional68],
+      additionalImg: [image39, additional67, additional68],
     },
     description: "FC Red Star Baby Pajamas Long Sleeve",
     price: 12.49,

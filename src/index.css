@@ -14,6 +14,12 @@
   src: url("./assets//fonts//Lato/Lato-Bold.ttf");
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 @layer components {
   .card {
     width: 300px;
@@ -43,4 +49,19 @@
     color: #e50010;
     background: rgb(255 237 213);
   }
+
+  @media (max-width: 576px) {
+    .previousBttn {
+      display: none;
+    }
+    .nextBttn {
+      display: none;
+    }
+    
+  };
+
+  .active {
+    border: 2px solid #e50010;
+  }
+
 }

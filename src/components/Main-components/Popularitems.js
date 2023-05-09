@@ -6,9 +6,11 @@ import FindMore from "./FindMore";
 import {PopUpFirst, PopUpSecond} from "./PopUp";
 import { useState } from "react";
 import {AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 const PopularItems = () => {
+  
 const [isVisible, setIsVisible] = useState(false);
 const [isVisible1, setIsVisible1] = useState(false)
 
@@ -55,7 +57,7 @@ const hiddenHandler1 = () => {
           </div>
           <div className="flex flex-col w-full items-center absolute bottom-12">
           <div className="text-sm font-extrabold text-paragraph  opacity-90">
-            <Button className="rounded-md  opacity-85  px-3 py-1 md:px-9 md:py-2 ">Shop Now</Button>
+            <Link to="products"><Button className="rounded-md  opacity-85  px-3 py-1 md:px-9 md:py-2 ">Shop Now</Button></Link>
           </div>
         </div>
         </div>

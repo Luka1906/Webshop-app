@@ -2,18 +2,18 @@ import { AllItems } from "../../data/AllItems";
 import Product from "./Product";
 import Categories from "./Categories";
 import { useEffect, useState} from "react";
+import { useMediaQuery } from "@mui/material";
 import ReactPaginate from "react-paginate";
 import SearchForm from "./SearchForm";
 
 
 const Products = () => {
 
-  const [items, setItems] = useState( AllItems);
+  const [items, setItems] = useState([...AllItems]);
 
   const [pageNumber, setPageNumber] = useState (localStorage.getItem("currentPage"))
   const [title, setTitle] = useState("All");
   
- 
   const itemsPerPage = 8;
   const currentItems = pageNumber * itemsPerPage;
 
@@ -53,7 +53,7 @@ const Products = () => {
   const shopCategories = [...new Set(AllItems.map((Val) => Val.category))];
 
   const filterItems = (itemCategory) => {
-   const newItem = AllItems.filter((item) => {
+   const newItem =[...AllItems].filter((item) => {
       return item.category === itemCategory;
     });
     setItems(newItem);
@@ -62,22 +62,25 @@ const Products = () => {
   };
 
   const searchItems = (searchInput) => {
-    if (searchInput !== "") {
-      const newItem = AllItems.filter((item) => {
+    if (searchInput.length > 1) {
+      const newItem = [...AllItems].filter((item) => {
         return Object.values(item)
           .join("")
           .toLowerCase()
           .includes(searchInput.toLowerCase());
       });
       setItems(newItem);
+      console.log(newItem)
     } else {
-      setItems(AllItems);
+      setItems([...AllItems]);
     }
   };
 
+  const isMobile = useMediaQuery("(max-width:576px)");
+
   return (
     <>
-      <SearchForm searchItems={searchItems} setTitle={setTitle} setItems={setItems} />
+      <SearchForm searchItems={searchItems} setTitle={setTitle} setItems={setItems} setPage={setPageNumber} />
       <Categories
         categories={shopCategories}
         setItems={setItems}
@@ -97,7 +100,7 @@ const Products = () => {
         onPageChange={changePageHandler}
         forcePage={pageNumber}
         containerClassName={"paginationBttns"}
-        previousLinkClassName={"previousBttn"}
+        previousLinkClassName={`previousBttn`}
         nextLinkClassName={"nextBttn"}
         disabledClassName={"paginationDisabled"}
         activeClassName={"paginationActive"}

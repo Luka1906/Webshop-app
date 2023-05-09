@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
-import { popUpAnimationStart } from "../animations/MainPage-animations";
+import { popUpCartToggle } from "../animations/Cart-animation";
 
 const Backdrop = (props) => {
   return (
@@ -15,7 +15,11 @@ const Backdrop = (props) => {
 const ModalOverlay = (props) => {
   return (
     <motion.div
-      className=" fixed top-0 right-0  mx-auto w-2/3 h-full  md:w-[25rem] p-3 rounded-md w z-50 overflow-y-auto bg-neutral-100"
+    variants={popUpCartToggle}
+    initial={"hidden"}
+    animate={"visible"}
+    exit={"exit"}
+      className=" fixed top-0 right-0  mx-auto w-[20rem] h-full  md:w-[25rem] p-3 rounded-md w z-50 overflow-y-auto bg-neutral-100"
     >
       {props.children}
     </motion.div>

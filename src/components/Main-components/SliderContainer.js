@@ -38,9 +38,12 @@ const SliderContainer = () => {
             <div className="w-[220px]  mx-auto">
               <SliderItems
                 key={item.id}
+                id={item.id}
                 image={item.images.image}
                 title={item.description}
                 price={item.price}
+                discount={item.discount}
+                description={item.description}
               />
             </div>
           ))}

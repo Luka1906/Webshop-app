@@ -5,9 +5,39 @@ export const cartAnimation =  {
     },
     animate: {
         opacity:1,
-        scale:1.3,
+        scale:1.35,
         transition: {
             duration:0.2
         }
+    }
+};
+
+export const popUpCartToggle= {
+    hidden: {
+   
+        x: "40vw",
+        y: "0",
+       
+    },
+    visible: {
+      
+        x:0,
+        y: "0",
+        transition: {
+            duration: 0.25,
+            ease: "easeOut"
+          
+        }
+    },
+    exit: {
+  
+        x: "40vw",
+        y:"0",
+        transition: {
+            duration:0.25,
+            ease: "easeOut"
+        }
+       
+        
     }
 }
