@@ -1,120 +1,122 @@
-import image1 from "../assets/images/items/image1.jpeg";
-import image2 from "../assets/images/items/image2.jpeg";
-import image3 from "../assets/images/items/image3.jpeg";
-import image4 from "../assets/images/items/image4.jpeg";
-import image5 from "../assets/images/items/image5.jpeg";
-import image6 from "../assets/images/items/image6.jpeg";
-import image8 from "../assets/images/items/image8.jpeg";
-import image9 from "../assets/images/items/image9.jpeg";
-import image10 from "../assets/images/items/image10.jpeg";
-import image11 from "../assets/images/items/image11.jpeg";
-import image12 from "../assets/images/items/image12.jpeg";
-import image13 from "../assets/images/items/image13.jpeg";
-import image14 from "../assets/images/items/image14.jpeg";
-import image15 from "../assets/images/items/image15.jpeg";
-import image16 from "../assets/images/items/image16.jpeg";
-import image17 from "../assets/images/items/image17.jpeg";
-import image18 from "../assets/images/items/image18.jpeg";
-import image19 from "../assets/images/items/image19.jpeg";
-import image20 from "../assets/images/items/image20.jpeg";
-import image21 from "../assets/images/items/image21.jpeg";
-import image22 from "../assets/images/items/image22.jpeg";
-import image23 from "../assets/images/items/image23.jpeg";
-import image24 from "../assets/images/items/image24.jpeg";
-import image25 from "../assets/images/items/image25.jpeg";
-import image26 from "../assets/images/items/image26.jpeg";
-import image27 from "../assets/images/items/image27.jpeg";
-import image28 from "../assets/images/items/image28.jpeg";
-import image29 from "../assets/images/items/image29.jpeg";
-import image30 from "../assets/images/items/image30.jpeg";
-import image31 from "../assets/images/items/image31.jpeg";
-import image32 from "../assets/images/items/image32.jpeg";
-import image33 from "../assets/images/items/image33.jpeg";
-import image34 from "../assets/images/items/image34.jpeg";
-import image35 from "../assets/images/items/image35.jpeg";
-import image36 from "../assets/images/items/image36.jpeg";
-import image37 from "../assets/images/items/image37.jpeg";
-import image38 from "../assets/images/items/image38.jpeg";
-import image39 from "../assets/images/items/image39.jpeg";
-
-import additional1 from "../assets/images/additionalImages/additional1.jpeg";
-import additional2 from "../assets/images/additionalImages/additional2.jpeg";
-import additional3 from "../assets/images/additionalImages/additional3.jpeg";
-import additional4 from "../assets/images/additionalImages/additional4.jpeg";
-import additional5 from "../assets/images/additionalImages/additional5.jpeg";
-import additional6 from "../assets/images/additionalImages/additional6.jpeg";
-import additional7 from "../assets/images/additionalImages/additional7.jpeg";
-import additional8 from "../assets/images/additionalImages/additional8.jpeg";
-import additional9 from "../assets/images/additionalImages/additional9.jpeg";
-import additional10 from "../assets/images/additionalImages/additional10.jpeg";
-import additional11 from "../assets/images/additionalImages/additional11.jpeg";
-import additional12 from "../assets/images/additionalImages/additional12.jpeg";
-import additional13 from "../assets/images/additionalImages/additional13.jpeg";
-import additional14 from "../assets/images/additionalImages/additional14.jpeg";
-import additional15 from "../assets/images/additionalImages/additional15.jpeg";
-import additional16 from "../assets/images/additionalImages/additional16.jpeg";
-import additional17 from "../assets/images/additionalImages/additional17.jpeg";
-import additional18 from "../assets/images/additionalImages/additional18.jpeg";
-import additional19 from "../assets/images/additionalImages/additional19.jpeg";
-import additional20 from "../assets/images/additionalImages/additional20.jpeg";
-import additional21 from "../assets/images/additionalImages/additional21.jpeg";
-import additional22 from "../assets/images/additionalImages/additional22.jpeg";
-import additional23 from "../assets/images/additionalImages/additional23.jpeg";
-import additional24 from "../assets/images/additionalImages/additional24.jpeg";
-import additional25 from "../assets/images/additionalImages/additional25.jpeg";
-import additional26 from "../assets/images/additionalImages/additional26.jpeg";
-import additional27 from "../assets/images/additionalImages/additional27.jpeg";
-import additional28 from "../assets/images/additionalImages/additional28.jpeg";
-import additional29 from "../assets/images/additionalImages/additional29.jpeg";
-import additional30 from "../assets/images/additionalImages/additional30.jpeg";
-import additional31 from "../assets/images/additionalImages/additional31.jpeg";
-import additional32 from "../assets/images/additionalImages/additional32.jpeg";
-import additional33 from "../assets/images/additionalImages/additional33.jpeg";
-import additional34 from "../assets/images/additionalImages/additional34.jpeg";
-import additional35 from "../assets/images/additionalImages/additional35.jpeg";
-import additional36 from "../assets/images/additionalImages/additional36.jpeg";
-import additional37 from "../assets/images/additionalImages/additional37.jpeg";
-import additional38 from "../assets/images/additionalImages/additional38.jpeg";
-import additional39 from "../assets/images/additionalImages/additional39.jpeg";
-import additional40 from "../assets/images/additionalImages/additional40.jpeg";
-import additional41 from "../assets/images/additionalImages/additional41.jpeg";
-import additional42 from "../assets/images/additionalImages/additional42.jpeg";
-import additional43 from "../assets/images/additionalImages/additional43.jpeg";
-import additional44 from "../assets/images/additionalImages/additional44.jpeg";
-import additional45 from "../assets/images/additionalImages/additional45.jpeg";
-import additional46 from "../assets/images/additionalImages/additional46.jpeg";
-import additional47 from "../assets/images/additionalImages/additional47.jpeg";
-import additional48 from "../assets/images/additionalImages/additional48.jpeg";
-import additional49 from "../assets/images/additionalImages/additional49.jpeg";
-import additional50 from "../assets/images/additionalImages/additional50.jpeg";
-import additional51 from "../assets/images/additionalImages/additional51.jpeg";
-import additional52 from "../assets/images/additionalImages/additional52.jpeg";
-import additional53 from "../assets/images/additionalImages/additional53.jpeg";
-import additional54 from "../assets/images/additionalImages/additional54.jpeg";
-import additional56 from "../assets/images/additionalImages/additional56.jpeg";
-import additional57 from "../assets/images/additionalImages/additional57.jpeg";
-import additional58 from "../assets/images/additionalImages/additional58.jpeg";
-import additional59 from "../assets/images/additionalImages/additional59.jpeg";
-import additional60 from "../assets/images/additionalImages/additional60.jpeg";
-import additional61 from "../assets/images/additionalImages/additional61.jpeg";
-import additional62 from "../assets/images/additionalImages/additional62.jpeg";
-import additional63 from "../assets/images/additionalImages/additional63.jpeg";
-import additional64 from "../assets/images/additionalImages/additional64.jpeg";
-import additional65 from "../assets/images/additionalImages/additional65.jpeg";
-import additional66 from "../assets/images/additionalImages/additional66.jpeg";
-import additional67 from "../assets/images/additionalImages/additional67.jpeg";
-import additional68 from "../assets/images/additionalImages/additional68.jpeg";
-import additional69 from "../assets/images/additionalImages/additional69.jpeg";
-
 import { Rating } from "@mui/material";
+
+const image1 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286040/React%20Webshop/image4_udgfsx.webp";
+const image2 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286040/React%20Webshop/image4_udgfsx.webp";
+const image3 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286118/React%20Webshop/image19_o99odj.jpg";
+const image4 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684285962/React%20Webshop/image1_k5fjpi.png";
+const image5 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286045/React%20Webshop/image5_vdhp3k.webp";
+const image6 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286053/React%20Webshop/image6_bxb19v.webp";
+const image7 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286060/React%20Webshop/image8_tnpuzr.webp";
+const image8 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286064/React%20Webshop/image9_p965vo.jpg";
+const image9 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286067/React%20Webshop/image10_im9y9z.webp" ;
+const image10 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286092/React%20Webshop/image11_uf5nkn.avif";
+const image11 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286099/React%20Webshop/image12_izcpev.avif";
+const image12 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286101/React%20Webshop/image13_yimh7q.jpg";
+const image13 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286105/React%20Webshop/image14_uhxa0i.webp";
+const image14 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286108/React%20Webshop/image15_djnf8t.jpg";
+const image15 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286110/React%20Webshop/image16_jtg2yt.avif";
+const image16 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286113/React%20Webshop/image17_ygso4j.webp";
+const image17 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286115/React%20Webshop/image18_wpginl.jpg";
+const image18 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286039/React%20Webshop/image3_wyqvy6.png";
+const image19 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286121/React%20Webshop/image20_dk2jsn.webp";
+const image20 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286123/React%20Webshop/image21_xpkdyg.jpg";
+const image21 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286126/React%20Webshop/image22_dsmqxi.jpg";
+const image22 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286128/React%20Webshop/image23_t93odb.avif";
+const image23 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286131/React%20Webshop/image24_g8exo9.jpg";
+const image24 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286135/React%20Webshop/image25_bwtnxx.png";
+const image25 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286136/React%20Webshop/image26_m040zr.jpg";
+const image26 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286139/React%20Webshop/image27_ceyaiv.jpg";
+const image27 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286142/React%20Webshop/image28_izvwti.avif";
+const image28 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286144/React%20Webshop/image29_t6re5l.jpg";
+const image29 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286147/React%20Webshop/image30_yj1s7b.jpg";
+const image30 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286152/React%20Webshop/image31_fp1mvf.jpg";
+const image31 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286155/React%20Webshop/image32_cjuwrz.jpg";
+const image32 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286158/React%20Webshop/image33_niyola.jpg";
+const image33 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286160/React%20Webshop/image34_z6ldm0.jpg";
+const image34 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286163/React%20Webshop/image35_kaw7ya.png";
+const image35 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286166/React%20Webshop/image36_yj9ord.jpg";
+const image36 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286169/React%20Webshop/image37_xmdauv.webp";
+const image37 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286172/React%20Webshop/image38_hle2sc.jpg";
+const image38 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286175/React%20Webshop/image39_vjmxzi.png";
+
+const additional1 =  "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287479/React%20Webshop/additional1_obnqan.webp";
+const additional2 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287484/React%20Webshop/additional2_umazvw.webp" ;
+const additional3 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287494/React%20Webshop/additional3_li0yov.webp" ;
+const additional4 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287497/React%20Webshop/additional4_mdmwjw.jpg";
+const additional5 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287498/React%20Webshop/additional5_dprled.jpg";
+const additional7 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287505/React%20Webshop/additional7_f3yle9.jpg" ;
+const additional8 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287506/React%20Webshop/additional8_by54iw.jpg" ;
+const additional9 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287508/React%20Webshop/additional9_gr3anj.jpg" ;
+const additional6 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287500/React%20Webshop/additional6_ce2zak.jpg" ;
+const additional10 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287510/React%20Webshop/additional10_g9zien.png" ;
+const additional11 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287512/React%20Webshop/additional11_ln97kc.png";
+const additional12 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287513/React%20Webshop/additional12_gtb8rq.jpg" ;
+const additional13 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287516/React%20Webshop/additional13_yjtyzv.jpg" ;
+const additional14 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287519/React%20Webshop/additional14_vior2j.jpg" ;
+const additional15 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287520/React%20Webshop/additional15_zryost.jpg" ;
+const additional16 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287522/React%20Webshop/additional16_s7szqu.jpg" ;
+const additional17 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287525/React%20Webshop/additional17_ifq9jh.jpg" ;
+const additional18 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287527/React%20Webshop/additional18_wg2npw.webp" ;
+const additional19 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287531/React%20Webshop/additional19_x1gokk.png" ;
+const additional20 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287532/React%20Webshop/additional20_nn63hc.webp";
+const additional21 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287533/React%20Webshop/additional21_tpaewo.webp";
+const additional22 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287535/React%20Webshop/additional22_dkfrc6.webp" ;
+const additional23 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287538/React%20Webshop/additional23_woxtma.webp" ;
+const additional24 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287540/React%20Webshop/additional24_mih3q3.webp" ;
+const additional25 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287545/React%20Webshop/additional25_xon73m.jpg" ;
+const additional26 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287548/React%20Webshop/additional26_qzlwxd.jpg" ;
+const additional27 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287550/React%20Webshop/additional27_tbc0yf.jpg" ;
+const additional28 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287551/React%20Webshop/additional28_azqpi2.webp" ;
+const additional29 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287552/React%20Webshop/additional29_ppb6zs.webp" ;
+const additional30 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287553/React%20Webshop/additional30_imylnr.jpg" ;
+const additional31 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287556/React%20Webshop/additional31_gnzvmc.jpg" ;
+const additional32 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287557/React%20Webshop/additional32_fr1tqp.avif" ;
+const additional33 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287559/React%20Webshop/additional33_sfjf1c.jpg" ;
+const additional34 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287562/React%20Webshop/additional34_rm2vek.jpg" ;
+const additional35 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287564/React%20Webshop/additional35_s1rxme.webp" ;
+const additional36 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287566/React%20Webshop/additional36_hmojcc.webp" ;
+const additional37 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287569/React%20Webshop/additional37_fjtctu.jpg" ;
+const additional38 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287571/React%20Webshop/additional38_bghfxf.webp" ;
+const additional39 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287574/React%20Webshop/additional39_egffae.webp" ;
+const additional40 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287575/React%20Webshop/additional40_hh2irf.jpg" ;
+const additional41 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287577/React%20Webshop/additional41_ds7lzo.jpg" ;
+const additional42 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287579/React%20Webshop/additional42_j4ycnc.jpg" ;
+const additional43 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287582/React%20Webshop/additional43_ixug3i.jpg" ;
+const additional44 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287583/React%20Webshop/additional44_kttp9q.jpg";
+const additional45 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287585/React%20Webshop/additional45_sa1zju.jpg";
+const additional46 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287586/React%20Webshop/additional46_bfw5kl.avif" ;
+const additional47 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287588/React%20Webshop/additional47_zew7cb.jpg" ;
+const additional48 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287590/React%20Webshop/additional48_lxvggk.webp" ;
+const additional49 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287597/React%20Webshop/additional49_uqsfzi.webp" ;
+const additional50 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287599/React%20Webshop/additional50_m9minj.jpg";
+const additional51 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287600/React%20Webshop/additional51_qtflhj.png" ;
+const additional52 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287602/React%20Webshop/additional52_qljaly.webp" ;
+const additional53 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287604/React%20Webshop/additional53_ymtbur.webp" ;
+const additional54 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287606/React%20Webshop/additional54_frc1pl.webp" ;
+const additional56 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287613/React%20Webshop/additional56_xoe8hb.jpg" ;
+const additional57 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287615/React%20Webshop/additional57_ktdppv.jpg" ;
+const additional58 =  "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287616/React%20Webshop/additional58_l260x4.jpg";
+const additional59 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287618/React%20Webshop/additional59_myokbi.jpg" ;
+const additional60 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287620/React%20Webshop/additional60_b5jcta.jpg" ;
+const additional61 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287625/React%20Webshop/additional61_jn6t6m.jpg" ;
+const additional62 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287627/React%20Webshop/additional62_ldtr8z.jpg" ;
+const additional63 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287629/React%20Webshop/additional63_usipor.jpg" ;
+const additional64 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287631/React%20Webshop/additional64_yk5klw.jpg" ;
+const additional65 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287632/React%20Webshop/additional65_ggvolt.webp" ;
+const additional66 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287634/React%20Webshop/additional66_h0sm8q.jpg" ;
+const additional67 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287639/React%20Webshop/additional67_m7plml.png" ;
+const additional68 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287640/React%20Webshop/additional68_fyoffy.jpg" ;
+const additional69 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287647/React%20Webshop/additional69_tqxbhm.webp" ;
+
+
 
 export const AllItems = [
   {
     id: 1,
     itemNumber: "# A6539056",
     images: {
-      image: image4,
-      additionalImg: [image4,additional1, additional2, additional3],
+      image: image1,
+      additionalImg: [image1,additional1, additional2, additional3],
     },
     description: "Puma Serbia Soccer Jersey",
     price: 150,
@@ -171,8 +173,8 @@ export const AllItems = [
     id: 3,
     itemNumber: "# C1269795",
     images: {
-      image: image19,
-      additionalImg: [image19,additional7, additional8, additional9],
+      image: image3,
+      additionalImg: [image3,additional7, additional8, additional9],
     },
     description: "Baby/Toddler Bib with Serbian symbols ",
     price: 25.99,
@@ -199,8 +201,8 @@ export const AllItems = [
     id: 4,
     itemNumber: "# A1448497",
     images: {
-      image: image1,
-      additionalImg: [image1, additional10, additional11, additional12],
+      image: image4,
+      additionalImg: [image4, additional10, additional11, additional12],
     },
     description: "Vintage Pocket Watch",
     price: 99.49,
@@ -281,8 +283,8 @@ export const AllItems = [
     id: 7,
     itemNumber: "# A1068117",
     images: {
-      image: image8,
-      additionalImg: [image8, additional19, additional20, additional21],
+      image: image7,
+      additionalImg: [image7, additional19, additional20, additional21],
     },
 
     description: "Serbia Flag Cap",
@@ -309,8 +311,8 @@ export const AllItems = [
     id: 8,
     itemNumber: "# M8868497",
     images: {
-      image: image9,
-      additionalImg: [image9, additional22, additional23, additional24],
+      image: image8,
+      additionalImg: [image8, additional22, additional23, additional24],
     },
     description: "Serbia Shoes with Flag Colors",
     price: 75.49,
@@ -336,8 +338,8 @@ export const AllItems = [
     id: 9,
     itemNumber: "# M1008497",
     images: {
-      image: image10,
-      additionalImg: [image10, additional25, additional26],
+      image: image9,
+      additionalImg: [image9, additional25, additional26],
     },
 
     description: "Smoki/Peanut Flips",
@@ -365,8 +367,8 @@ export const AllItems = [
     id: 10,
     itemNumber: "# A1998497",
     images: {
-      image: image11,
-      additionalImg: [image11, additional27, additional28, additional29],
+      image: image10,
+      additionalImg: [image10, additional27, additional28, additional29],
     },
 
     description: "Novak Djokovic T-Shirt",
@@ -393,8 +395,8 @@ export const AllItems = [
     id: 11,
     itemNumber: "# B1008499",
     images: {
-      image: image12,
-      additionalImg: [image12, additional30, additional31, additional32],
+      image: image11,
+      additionalImg: [image11, additional30, additional31, additional32],
     },
 
     description: "Serbia Eagle Necklace",
@@ -421,8 +423,8 @@ export const AllItems = [
     id: 12,
     itemNumber: "# A1468497",
     images: {
-      image: image13,
-      additionalImg: [image13, additional33, additional34],
+      image: image12,
+      additionalImg: [image12, additional33, additional34],
     },
 
     description: "Granny's Secret Ajvar",
@@ -449,8 +451,8 @@ export const AllItems = [
     id: 13,
     itemNumber: "# R1265497",
     images: {
-      image: image14,
-      additionalImg: [image14, additional35, additional36],
+      image: image13,
+      additionalImg: [image13, additional35, additional36],
     },
     description: "Slides with Serbian flag ",
     price: 25.49,
@@ -476,8 +478,8 @@ export const AllItems = [
     id: 14,
     itemNumber: "# A9968499",
     images: {
-      image: image15,
-      additionalImg: [image15, additional37],
+      image: image14,
+      additionalImg: [image14, additional37],
     },
     description: "Opanci - ethno shoes",
     price: 99.99,
@@ -503,8 +505,8 @@ export const AllItems = [
     id: 15,
     itemNumber: "# B14888497",
     images: {
-      image: image16,
-      additionalImg: [image16, additional38],
+      image: image15,
+      additionalImg: [image15, additional38],
     },
     description: "Serbia Prayer Rope(black)",
     price: 25.99,
@@ -529,8 +531,8 @@ export const AllItems = [
     id: 16,
     itemNumber: "# C14611497",
     images: {
-      image: image17,
-      additionalImg: [image17, additional39],
+      image: image16,
+      additionalImg: [image16, additional39],
     },
 
     description: "Lane Ground Biscuit ",
@@ -556,8 +558,8 @@ export const AllItems = [
     id: 17,
     itemNumber: "# K9168397",
     images: {
-      image: image18,
-      additionalImg: [image18, additional40, additional41, additional69],
+      image: image17,
+      additionalImg: [image17, additional40, additional41, additional69],
     },
     description: "Boy and Girl in Traditional Costumes Picture",
     price: 39.99,
@@ -576,8 +578,8 @@ export const AllItems = [
     id: 18,
     itemNumber: "# J5469495",
     images: {
-      image: image3,
-      additionalImg: [image3,additional42],
+      image: image18,
+      additionalImg: [image18,additional42],
     },
     description: "Two Eagles Serbia Towel",
     price: 30.19,
@@ -596,8 +598,8 @@ export const AllItems = [
     id: 19,
     itemNumber: "# C9968497",
     images: {
-      image: image20,
-      additionalImg: [image20, additional43],
+      image: image19,
+      additionalImg: [image19, additional43],
     },
     description: "Chips Way Gricko",
     price: 1.99,
@@ -622,8 +624,8 @@ export const AllItems = [
     id: 20,
     itemNumber: "# L2568437",
     images: {
-      image: image21,
-      additionalImg: [image21, additional44],
+      image: image20,
+      additionalImg: [image20, additional44],
     },
     description: "Lozovaca rakija(serbian brandy)",
     price: 27.99,
@@ -649,8 +651,8 @@ export const AllItems = [
     id: 21,
     itemNumber: "# A8888497",
     images: {
-      image: image22,
-      additionalImg: [image22, additional45],
+      image: image21,
+      additionalImg: [image21, additional45],
     },
     description: "Girls Dress with Custom Serbian Name Embroidered",
     price: 52.99,
@@ -675,8 +677,8 @@ export const AllItems = [
     id: 22,
     itemNumber: "# Y2068497",
     images: {
-      image: image23,
-      additionalImg: [image23, additional46],
+      image: image22,
+      additionalImg: [image22, additional46],
     },
     description: "Serbia Winter Hat(grey)",
     price: 25.99,
@@ -701,8 +703,8 @@ export const AllItems = [
     id: 23,
     itemNumber: "# P1484997",
     images: {
-      image: image24,
-      additionalImg: [image24, additional47],
+      image: image23,
+      additionalImg: [image23, additional47],
     },
     description: "Funny Serbia Tumbler 20 oz",
     price: 25.99,
@@ -727,8 +729,8 @@ export const AllItems = [
     id: 24,
     itemNumber: "# B1228490",
     images: {
-      image: image25,
-      additionalImg: [image25, additional48],
+      image: image24,
+      additionalImg: [image24, additional48],
     },
     description: "Serbia Gold Sequins Pillow",
     price: 45.09,
@@ -753,8 +755,8 @@ export const AllItems = [
     id: 25,
     itemNumber: "# A1000004",
     images: {
-      image: image26,
-      additionalImg: [image26, additional49],
+      image: image25,
+      additionalImg: [image25, additional49],
     },
     description: "Serbia Wodden Cutting Board",
     price: 65.99,
@@ -779,8 +781,9 @@ export const AllItems = [
     id: 26,
     itemNumber: "# M1438436",
     images: {
-      additionalImg: [image27, additional50, additional51],
-      image: image27,
+      image: image26,
+      additionalImg: [image26, additional50, additional51],
+
     },
     description: "Set of 5 Čokanjs(shot glasses for serbian brandy/rakija)",
     price: 25.99,
@@ -805,8 +808,8 @@ export const AllItems = [
     id: 27,
     itemNumber: "# K8465457",
     images: {
-      image: image28,
-      additionalImg: [image28, additional52, additional53],
+      image: image27,
+      additionalImg: [image27, additional52, additional53],
     },
     description: "Serbian Baby Girl Folk Costume",
     price: 89.99,
@@ -831,8 +834,8 @@ export const AllItems = [
     id: 28,
     itemNumber: "# A1494397",
     images: {
-      image: image29,
-      additionalImg: [image29, additional54],
+      image: image28,
+      additionalImg: [image28, additional54],
     },
     description: "Stark Bananica",
     price: 0.49,
@@ -858,8 +861,8 @@ export const AllItems = [
     id: 29,
     itemNumber: "# L1077497",
     images: {
-      image: image30,
-      additionalImg: [image30, additional56],
+      image: image29,
+      additionalImg: [image29, additional56],
     },
     description: "Book 'Prepiska sa rodbinom'(Nikola Tesla)",
     price: 14.99,
@@ -883,8 +886,8 @@ export const AllItems = [
     id: 30,
     itemNumber: "# M1468746",
     images: {
-      image: image31,
-      additionalImg: [image31, additional57, additional58],
+      image: image30,
+      additionalImg: [image30, additional57, additional58],
     },
     description: "Teddy Bear with Custom Serbian Name",
     price: 35.99,
@@ -909,8 +912,8 @@ export const AllItems = [
     id: 31,
     itemNumber: "# K1321497",
     images: {
-      image: image32,
-      additionalImg: [image32, additional59, additional60],
+      image: image31,
+      additionalImg: [image31, additional59, additional60],
     },
     description: "Burgundy Folk Apron",
     price: 55.99,
@@ -935,8 +938,8 @@ export const AllItems = [
     id: 32,
     itemNumber: "# Z1008490",
     images: {
-      image: image33,
-      additionalImg: [image33, additional61],
+      image: image32,
+      additionalImg: [image32, additional61],
     },
     description: "Wooden Flask Saint George Light Wood 16 oz",
     price: 65.29,
@@ -962,8 +965,8 @@ export const AllItems = [
     id: 33,
     itemNumber: "# Y1465927",
     images: {
-      image: image34,
-      additionalImg: [image34, additional62],
+      image: image33,
+      additionalImg: [image33, additional62],
     },
 
     description: "Medovaca(honey flavored serbian brandy-rakija)",
@@ -983,8 +986,8 @@ export const AllItems = [
     id: 34,
     itemNumber: "# A1668410",
     images: {
-      image: image35,
-      additionalImg: [image35, additional63],
+      image: image34,
+      additionalImg: [image34, additional63],
     },
 
     description: "Baby Body Athlete FC Partizan Coat Of Arms",
@@ -1004,8 +1007,8 @@ export const AllItems = [
     id: 35,
     itemNumber: "# R1464447",
     images: {
-      image: image36,
-      additionalImg: [image36, additional64],
+      image: image35,
+      additionalImg: [image35, additional64],
     },
     description: "Rubinov vinjak - serbian brandy",
     price: 19.99,
@@ -1024,8 +1027,8 @@ export const AllItems = [
     id: 36,
     itemNumber: "# D1444491",
     images: {
-      image: image37,
-      additionalImg: [image37, additional65],
+      image: image36,
+      additionalImg: [image36, additional65],
     },
 
     description: "Sljivovica - plum serbian brandy(rakija)",
@@ -1045,8 +1048,8 @@ export const AllItems = [
     id: 37,
     itemNumber: "# H54639973",
     images: {
-      image: image38,
-      additionalImg: [image38, additional66],
+      image: image37,
+      additionalImg: [image37, additional66],
     },
     description: "Cotton Sweatuit Serbia",
     price: 72.49,
@@ -1065,8 +1068,8 @@ export const AllItems = [
     id: 38,
     itemNumber: "# A0673490",
     images: {
-      image: image39,
-      additionalImg: [image39, additional67, additional68],
+      image: image38,
+      additionalImg: [image38, additional67, additional68],
     },
     description: "FC Red Star Baby Pajamas Long Sleeve",
     price: 12.49,

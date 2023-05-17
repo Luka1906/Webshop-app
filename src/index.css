@@ -60,8 +60,28 @@
     
   };
 
+
+}
+
+@layer utilities {
   .active {
     border: 2px solid #e50010;
   }
+  .error-message {
+    color: #d8000c;
+  }
+
+  .invalid input {
+    border: 1px solid #b40e0e;
+    background-color: #fddddd;
+
+  }
+  .invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+.success {
+  color: 	#198754;
+}
 
 }

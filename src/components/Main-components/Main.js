@@ -7,7 +7,9 @@ import SearchForm from "../Product-Page-components/SearchForm";
 
 
 
+
 const MainPage = () => {
+   
 return (
     <>
     <div className="  bottom-[20vh] flex bg-main-wallpaper shadow-background-shadow w-screen  bg-cover justify-start items-end r h-[70vh] md:h-[100vh] bg-center">

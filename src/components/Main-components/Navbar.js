@@ -1,6 +1,6 @@
 import Logo from "./Logo";
-import bag from "../../assets/images/bag.svg";
-import user from "../../assets/images/user.svg";
+import bag from "../../assets/logos/bag.svg";
+import user from "../../assets/logos/user.svg";
 import { Link } from "react-router-dom";
 import CartContext from "../../store/cart-context";
 import { useContext, useEffect, useState } from "react";

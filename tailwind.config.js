@@ -1,4 +1,4 @@
-import images from './src/assets/images/image6.jpeg'
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -18,9 +18,9 @@ module.exports = {
        
       },
       backgroundImage: {
-        'main-wallpaper': "url('././assets/images/wallpaper/image1.jpeg')",
-        'jersey-pic': "url('././assets/images/items/image4.jpeg')",
-        'rakija-pic':  "url('././assets/images/items/image7.jpeg')"
+        'main-wallpaper': "url('https://res.cloudinary.com/dodlxk4hg/image/upload/v1684289354/React%20Webshop/image1_rnik6p.avif')",
+        'jersey-pic': "url(https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286040/React%20Webshop/image4_udgfsx.webp)",
+        'rakija-pic':  "url(https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286057/React%20Webshop/image7_qaitjz.jpg)"
 
        
       },

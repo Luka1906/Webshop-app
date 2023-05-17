@@ -7,6 +7,7 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import Button from "../../../UI/Button";
 import { Link } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import PayButton from "../../Auth-component/PayButon";
 
 const Cart = () => {
   const cartContext = useContext(CartContext);
@@ -43,7 +44,7 @@ const Cart = () => {
     <>
       <div className="overflow-y-scroll h-[29rem]">{cartItems}</div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center"> 
         <div className=" border-t-2 w-[85%] flex flex-col  justify-center pt-3 absolute  bottom-10">
           <div className=" flex justify-between">
             <h2 className=" text-lg md:text-xl">Item(s) total</h2>
@@ -51,9 +52,10 @@ const Cart = () => {
               ${cartContext.totalAmount.toFixed(2)}
             </h2>
           </div>
-          <button className=" rounded-lg p-1.5 mt-5 bg-orange-200 hover:scale-105 transform transition-all hover:translate-y-[-3px]  hover:bg-orange-300  text-primary-color-red">
-            Proceed to checkout
-          </button>
+       
+            <PayButton cartItems= {cartContext.items} >
+            </PayButton>
+       
         </div>
       </div>
     </>
