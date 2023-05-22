@@ -1,5 +1,6 @@
-import { useState } from "react";
-import { Form,useActionData,useNavigation } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Form,Link,useActionData,useNavigation } from "react-router-dom";
+import CartContext from "../../store/cart-context";
 
 
 const SignIn = () => {
@@ -7,6 +8,7 @@ const SignIn = () => {
   const navigation = useNavigation();
   const isSubmitting = navigation.state === "submitting"
   const [show, setShow] = useState(false);
+  const cartContext = useContext(CartContext)
 
 
   const showPasswordHandler = () => {
@@ -51,9 +53,12 @@ const SignIn = () => {
           >
             {show ? "HIDE" : "SHOW"}
           </div>
+          <Link to="/reset">
           <div className="absolute right-0 mt-2 text-xs underline">
             Forgot password?
           </div>
+          </Link>
+        
         </div>
         <button disabled={isSubmitting} className="mt-16 border-2 bg-orange-200 text-primary-color-red p-1">
           {isSubmitting? "Submitting" : "Sign in"}

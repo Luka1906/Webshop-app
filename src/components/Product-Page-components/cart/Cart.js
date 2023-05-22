@@ -20,6 +20,8 @@ const Cart = () => {
 
   const cartItemAddHandler = (item) => {
     cartContext.addItem({ ...item, amount: 1 });
+   
+   
   };
 
   const cartRemoveAllHandler = (id) => {

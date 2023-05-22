@@ -1,7 +1,7 @@
 import { Rating } from "@mui/material";
 
 const image1 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286040/React%20Webshop/image4_udgfsx.webp";
-const image2 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286040/React%20Webshop/image4_udgfsx.webp";
+const image2 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286029/React%20Webshop/image2_dweooy.jpg";
 const image3 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286118/React%20Webshop/image19_o99odj.jpg";
 const image4 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684285962/React%20Webshop/image1_k5fjpi.png";
 const image5 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286045/React%20Webshop/image5_vdhp3k.webp";

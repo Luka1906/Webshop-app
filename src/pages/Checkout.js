@@ -1,4 +1,4 @@
-import CheckOutSuccess from "../components/Auth-component/CheckoutSuccess"
+import CheckOutSuccess from "../components/Auth-component/CheckoutSuccess";
 
 const CheckOutPage = () => {
 

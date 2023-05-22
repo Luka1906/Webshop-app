@@ -1,14 +1,18 @@
 import Logo from "./Logo";
 import bag from "../../assets/logos/bag.svg";
 import user from "../../assets/logos/user.svg";
-import { Link } from "react-router-dom";
+import { Link, useRouteLoaderData } from "react-router-dom";
 import CartContext from "../../store/cart-context";
 import { useContext, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { cartAnimation } from "../../animations/Cart-animation";
 import SignInPopUp from "../SingIn-components/SignInPopUp";
+import { Form } from "react-router-dom";
 
 const Navbar = ({ pathname }) => {
+  const token = useRouteLoaderData("root");
+
+
   const cartContext = useContext(CartContext);
   const numberOfCartItems = cartContext.items.reduce((curNumber, item) => {
     return curNumber + item.amount;
@@ -70,16 +74,22 @@ const Navbar = ({ pathname }) => {
 
             <div className="flex flex-col relative ">
               <div className="cursor-pointer">
-              <img
-                onMouseOver={signInHoverHandler}
-                src={user}
-                 alt="signUp-icon"
-              />
-
+                <img
+                  onMouseOver={signInHoverHandler}
+                  src={user}
+                  alt="signUp-icon"
+                />
               </div>
 
               {singInPopUp && <SignInPopUp onClose={signInHoverOutHandler} />}
             </div>
+            {token ? (
+              <Form action="logout" method="POST">
+                <button>Logout</button>
+              </Form>
+            ) : (
+              <Link to="signIn">Sign in</Link>
+            )}
 
             <div
               className="flex cursor-pointer"
