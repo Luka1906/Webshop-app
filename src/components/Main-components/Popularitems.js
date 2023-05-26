@@ -1,42 +1,42 @@
-
 import Button from "../../UI/Button";
 import SliderContainer from "./SliderContainer";
 import Banner from "../../UI/Banner";
 import FindMore from "./FindMore";
-import {PopUpFirst, PopUpSecond} from "./PopUp";
+import { PopUpFirst, PopUpSecond } from "./PopUp";
 import { useState } from "react";
-import {AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 
-
 const PopularItems = () => {
+
+  const [isVisible1, setIsVisible1] = useState(false);
   
-const [isVisible, setIsVisible] = useState(false);
-const [isVisible1, setIsVisible1] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
+  const visibleHandler = () => {
+      setIsVisible(true);
+      document.body.style.overflow = "hidden";
+    };
+  
+    const hiddenHandler = () => {
+      setIsVisible(false);
+      document.body.style.overflow = "scroll";
+    };
+  
 
-const visibleHandler = () => {
-  setIsVisible(true);
-  document.body.style.overflow = "hidden"
-}
 
-const hiddenHandler = () => {
-  setIsVisible(false);
-  document.body.style.overflow="scroll"
-}
+  const visibleHandler1 = () => {
+    setIsVisible1(true);
+    document.body.style.overflow = "hidden";
+  };
 
-const visibleHandler1 = () => {
-  setIsVisible1(true);
-  document.body.style.overflow = "hidden"
-}
-
-const hiddenHandler1 = () => {
-  setIsVisible1(false);
-  document.body.style.overflow="scroll"
-}
+  const hiddenHandler1 = () => {
+    setIsVisible1(false);
+    document.body.style.overflow = "scroll";
+  };
 
   return (
     <>
-      <Banner onShow = {visibleHandler}>
+      <Banner onShow={visibleHandler}>
         <h1 className=" text-paragraph text-primary-color-red md:w-[45rem] w-5/6 ">
           New Serbian jerseys added to Spring Sale! Up to 60% off online &
           in-store
@@ -56,23 +56,22 @@ const hiddenHandler1 = () => {
             <p className="text-sm"> Serbia Football Soccer Jersey</p>
           </div>
           <div className="flex flex-col w-full items-center absolute bottom-12">
-          <div className="text-sm font-extrabold text-paragraph  opacity-90">
-            <Link to="products"><Button className="rounded-md  opacity-85  px-3 py-1 md:px-9 md:py-2 ">Shop Now</Button></Link>
+            <Link to="products">
+              <Button className="rounded-md text-[1rem] opacity-90  opacity-85  px-3 py-1 md:px-9 md:py-2 hover:bg-slate-300 transition duration-150 active:scale-110 ">
+                Shop now
+              </Button>
+            </Link>
           </div>
-        </div>
         </div>
       </div>
       <SliderContainer />
-      <FindMore onShow1={visibleHandler1}/>
+      <FindMore onShow1={visibleHandler1} onClose1={hiddenHandler1} isVisible1={isVisible1} />
       <AnimatePresence>
-      {isVisible && <PopUpFirst onClose= {hiddenHandler}/>}
+        {isVisible && <PopUpFirst onClose={hiddenHandler}/>}
       </AnimatePresence>
       <AnimatePresence>
-      {isVisible1 && <PopUpSecond onClose1= {hiddenHandler1}/>}
+        {isVisible1 && <PopUpSecond onClose1={hiddenHandler1}/>}
       </AnimatePresence>
-     
-
-   
     </>
   );
 };

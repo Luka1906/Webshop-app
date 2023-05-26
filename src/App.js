@@ -14,6 +14,7 @@ import {action as resetEmailAction} from './pages/ResetPass';
 import {action as newPassAction} from './pages/NewPass'
 import NewPass from "./pages/NewPass";
 
+
 const router = createBrowserRouter([
   {
     path: "/",

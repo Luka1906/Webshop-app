@@ -44,7 +44,7 @@ const Cart = () => {
 
   const cartContent = (
     <>
-      <div className="overflow-y-scroll h-[29rem]">{cartItems}</div>
+      <div className="overflow-y-scroll h-[34rem]">{cartItems}</div>
 
       <div className="flex justify-center"> 
         <div className=" border-t-2 w-[85%] flex flex-col  justify-center pt-3 absolute  bottom-10">

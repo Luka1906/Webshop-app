@@ -93,7 +93,7 @@ const RegisterForm = () => {
           onChange={nameChangeHandler}
           onBlur={nameBlurHandler}
           value={enteredName}
-          className="border-gray-300 border p-2 w-[25rem] mb-2"
+          className="border-gray-300 border p-2 w-[25rem] mb-2 outline-4 outline-stone-600  "
         />
           {nameHasError && (
               <p className="error-message text-xs">
@@ -115,7 +115,7 @@ const RegisterForm = () => {
           onChange={emailChangeHandler}
           onBlur={emailBlurHandler}
           value={enteredEmail}
-          className="border-gray-300 border p-2 w-[25rem] mb-2"
+          className="border-gray-300 border p-2 w-[25rem] mb-2 outline-4 outline-stone-600  "
         />  
          {emailHasError && (
           <p className="error-message text-xs">
@@ -139,7 +139,7 @@ const RegisterForm = () => {
             onChange={passwordChangeHandler}
             onBlur={passwordBlurHandler}
             value={enteredPassword}
-            className="border-gray-300 border p-2 w-[25rem]"
+            className="border-gray-300 border p-2 w-[25rem] outline-4 outline-stone-600  "
           />
           </div>
       
@@ -169,12 +169,12 @@ const RegisterForm = () => {
           <input
             name="confirmPassword"
             type={confirmPassShow ? "text" : "password"}
-            className="border-gray-300 border p-2 w-[25rem]"
+            className="border-gray-300 border p-2 w-[25rem] outline-4 outline-stone-600  "
             onChange={confirmPasswordHandler}
           />
           <div
             onClick={showConfirmPasswordHandler}
-            className="absolute top-1/3 right-2 transform text-xs cursor-pointer"
+            className="absolute top-1/3 right-2 transform text-xs cursor-pointer outline-4 outline-stone-600  "
           >
             {confirmPassShow ? <p className="font-semi-bold-lato">HIDE</p> : <p className="font-semi-bold-lato">SHOW</p>}
           </div>
@@ -187,7 +187,7 @@ const RegisterForm = () => {
 
         </div>
       
-        <button disabled={!formIsValid || isSubmitting} className={`mt-8 border-2 bg-orange-200 text-primary-color-red p-1 disabled:cursor-not-allowed`}>
+        <button disabled={!formIsValid || isSubmitting} className={`mt-8  bg-orange-200 text-primary-color-red p-1.5 disabled:cursor-not-allowed active:scale-110  transform transition-all hover:translate-y-[-3px]  hover:bg-orange-300`}>
           {isSubmitting? 'Submitting' : "Register"}
         </button>
       </Form>

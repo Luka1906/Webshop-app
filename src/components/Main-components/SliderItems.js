@@ -32,12 +32,11 @@ const SliderItems = ({ image, title, price, discount,id,description }) => {
         </div>
 
         <div className="flex justify-center">
-          <Link className="w-3/4 text-text-color text-center rounded-lg text-sm relative top-3 py-1 tracking-wide bg-slate-100" state={{discountPrice: discountPrice,id: id, description: description, price:price, image:image }} to={`products/${id}`}>
+          <Link className="w-3/4 font-semi-bold-lato text-center rounded-lg text-sm relative top-3 py-1 tracking-wide bg-slate-100 hover:bg-slate-300 active:scale-110" state={{discountPrice: discountPrice,id: id, description: description, price:price, image:image }} to={`products/${id}`}>
             <button
               type="button"
-            
             >
-              Add to cart!
+              Add to cart
             </button>
           </Link>
         </div>

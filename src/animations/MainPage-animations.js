@@ -1,3 +1,4 @@
+import { spring } from "framer-motion";
 
 export const popUpAnimationStart = {
     hidden: {
@@ -27,5 +28,29 @@ export const popUpAnimationStart = {
        
         
     }
+};
+
+export const movingArrowAnimation = {
+  
+    hover: {
+        scale:1.25,
+        transition: {
+           repeat: Infinity,
+           repeatType: 'reverse',
+           duration:0.25
+
+        }
+    }
 }
+
+export const linksHoverAnimation = {
+    linkHover: {
+      originX: 0,
+      scale: 1.2,
+      transition: {
+        type: "spring",
+        stiffness: 500,
+      },
+    },
+  };
 

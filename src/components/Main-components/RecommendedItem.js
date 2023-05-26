@@ -3,8 +3,11 @@ import Card from "../../UI/Card";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+import { movingArrowAnimation } from "../../animations/MainPage-animations";
 
-const RecommendedItem = ({ image, title, price,id,discount }) => {
+
+const RecommendedItem = ({ image, description, price,id,discount }) => {
   const discountPrice =  (price - (price * discount) / 100)
  console.log(discountPrice)
 
@@ -25,10 +28,19 @@ const RecommendedItem = ({ image, title, price,id,discount }) => {
           alt="recommended.jpeg"
         />
         <div className="h-[8rem] flex flex-col items-center justify-around">
-          <p className="font-semi-bold-lato">{title}</p>
-          <Link state={{discountPrice:discountPrice.toFixed(2)}} to={`products/${id}`} className="flex items-center gap-2">
-           <p> Buy now</p> <FontAwesomeIcon icon={faArrowRight} />
+          <p className="font-semi-bold-lato">{description}</p>
+          <motion.div
+          variants={movingArrowAnimation}
+          whileHover={"hover"}
+          
+          >
+          <Link state={{discountPrice: discountPrice.toFixed(2), image:image, id: id, price: price, description: description}} to={`products/${id}`} className="flex items-center gap-2">
+           <p> Buy now</p>
+           <span><FontAwesomeIcon icon={faArrowRight} /></span> 
           </Link>
+
+          </motion.div>
+          
         </div>
       </Card>
     </div>

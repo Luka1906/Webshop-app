@@ -1,7 +1,7 @@
 import Logo from "./Logo";
 import bag from "../../assets/logos/bag.svg";
 import user from "../../assets/logos/user.svg";
-import { Link, useRouteLoaderData } from "react-router-dom";
+import { NavLink, useRouteLoaderData, Link } from "react-router-dom";
 import CartContext from "../../store/cart-context";
 import { useContext, useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -65,12 +65,12 @@ const Navbar = ({ pathname }) => {
           </div>
 
           <div className="flex  items-center gap-5 ">
-            <Link to="/">
-              <p className="hidden lg:block">About Us</p>
-            </Link>
-            <Link to="products">
+            <NavLink className={({isActive}) => isActive? "active" : undefined} to="/">
+              <p className="hidden lg:block">Home</p>
+            </NavLink>
+            <NavLink className={({isActive}) => isActive? "active" : undefined} to="products">
               <p className="hidden lg:block">Categories</p>
-            </Link>
+            </NavLink>
 
             <div className="flex flex-col relative ">
               <div className="cursor-pointer">
@@ -88,7 +88,7 @@ const Navbar = ({ pathname }) => {
                 <button>Logout</button>
               </Form>
             ) : (
-              <Link to="signIn">Sign in</Link>
+              <NavLink className={({isActive}) => isActive? "active" : undefined} to="signIn">Sign in</NavLink>
             )}
 
             <div

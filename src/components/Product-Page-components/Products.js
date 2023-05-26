@@ -1,19 +1,33 @@
 import { AllItems } from "../../data/AllItems";
 import Product from "./Product";
 import Categories from "./Categories";
-import { useEffect, useState} from "react";
-import { useMediaQuery } from "@mui/material";
+import { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import SearchForm from "./SearchForm";
 
-
 const Products = () => {
+  const [items, setItems] = useState(
+    JSON.parse(localStorage.getItem("items")) || AllItems
+  );
 
-  const [items, setItems] = useState([...AllItems]);
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(items));
+  }, [items]);
 
-  const [pageNumber, setPageNumber] = useState (localStorage.getItem("currentPage"))
-  const [title, setTitle] = useState("All");
-  
+  const [pageNumber, setPageNumber] = useState(
+    localStorage.getItem("current-page") || 0
+  );
+
+  useEffect(() => {
+    localStorage.setItem("current-page", pageNumber);
+  }, [pageNumber]);
+
+  const [title, setTitle] = useState(localStorage.getItem("title") || "All");
+
+  useEffect(() => {
+    localStorage.setItem("title", title);
+  }, [title]);
+
   const itemsPerPage = 8;
   const currentItems = pageNumber * itemsPerPage;
 
@@ -36,29 +50,23 @@ const Products = () => {
     });
 
   const pageCount = Math.ceil(items.length / itemsPerPage);
-  console.log(pageNumber)
 
   const changePageHandler = ({ selected }) => {
-    setPageNumber(selected)
-    localStorage.setItem("currentPage", selected);
-     
+    setPageNumber(selected);
+    console.log(selected);
   };
-
 
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [displayItems]);
 
- 
   const shopCategories = [...new Set(AllItems.map((Val) => Val.category))];
-
   const filterItems = (itemCategory) => {
-   const newItem =[...AllItems].filter((item) => {
+    const newItem = [...AllItems].filter((item) => {
       return item.category === itemCategory;
     });
     setItems(newItem);
     setTitle(itemCategory);
-  
   };
 
   const searchItems = (searchInput) => {
@@ -70,17 +78,19 @@ const Products = () => {
           .includes(searchInput.toLowerCase());
       });
       setItems(newItem);
-      console.log(newItem)
     } else {
       setItems([...AllItems]);
     }
   };
 
-  const isMobile = useMediaQuery("(max-width:576px)");
-
   return (
     <>
-      <SearchForm searchItems={searchItems} setTitle={setTitle} setItems={setItems} setPage={setPageNumber} />
+      <SearchForm
+        searchItems={searchItems}
+        setTitle={setTitle}
+        setItems={setItems}
+        setPage={setPageNumber}
+      />
       <Categories
         categories={shopCategories}
         setItems={setItems}
@@ -102,9 +112,7 @@ const Products = () => {
         containerClassName={"paginationBttns"}
         previousLinkClassName={`previousBttn`}
         nextLinkClassName={"nextBttn"}
-        disabledClassName={"paginationDisabled"}
         activeClassName={"paginationActive"}
-    
       />
     </>
   );

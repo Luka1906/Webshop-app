@@ -27,7 +27,7 @@ const ResetPassword = () => {
         <div>
         {noEmailFoundError && <p className="text-center error-message">{noEmailFoundError}</p>}
           <button
-            className={`mt-8 border-2 bg-orange-200 text-primary-color-red p-1 disabled:cursor-not-allowed w-full`}
+            className={`w-full mt-8 bg-orange-200 text-primary-color-red p-1.5 disabled:cursor-not-allowed active:scale-110  transform transition-all hover:translate-y-[-3px]  hover:bg-orange-300`}
           >
             Submit
           </button>

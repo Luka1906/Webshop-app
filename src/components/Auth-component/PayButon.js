@@ -3,6 +3,7 @@ import { getAuthToken } from "../../util/auth";
 import CartContext from "../../store/cart-context";
 import { useContext } from "react";
 
+
 const PayButton = ({ cartItems }) => {
   const token = getAuthToken();
   const cartContext = useContext(CartContext)
@@ -28,7 +29,7 @@ const PayButton = ({ cartItems }) => {
     <>
       {token ? (
         <button
-          className=" w-[100%] rounded-lg p-1.5 mt-5 bg-orange-200 hover:scale-105 transform transition-all hover:translate-y-[-3px]  hover:bg-orange-300  text-primary-color-red"
+          className=" w-[100%] rounded-lg p-1.5 mt-5 bg-orange-200 active:scale-110 transform transition-all hover:translate-y-[-3px]  hover:bg-orange-300  text-primary-color-red"
           onClick={() => handleCheckout()}
           type="submit"
         >
@@ -40,7 +41,7 @@ const PayButton = ({ cartItems }) => {
         to="signIn"
         onClick={cartContext.closeCartHandler}>
           <button
-            className=" w-[100%] rounded-lg p-1.5 mt-5 bg-orange-200 hover:scale-105 transform transition-all hover:translate-y-[-3px]  hover:bg-orange-300  text-primary-color-red"
+            className=" w-[100%] rounded-lg p-1.5 mt-5 bg-orange-200 active:scale-110 transform transition-all hover:translate-y-[-3px]  hover:bg-orange-300  text-primary-color-red"
             type="submit"
           >
             {" "}

@@ -7,6 +7,8 @@ import { AiOutlineArrowUp, AiOutlineArrowDown } from "react-icons/ai";
 import CartContext from "../../store/cart-context";
 import AddToCartButton from "./AddToCart";
 import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
+import { Rating } from "@mui/material";
+
 
 const ProductsDetails = (props) => {
   const { id } = useParams();
@@ -17,11 +19,11 @@ const ProductsDetails = (props) => {
   const mainImageHandler = (image, i) => {
     setMainImage(image);
 
-    refs.current[i].classList.add("active");
+    refs.current[i].classList.add("active-product");
 
     for (let j = 0; j < chosenProduct.images.additionalImg.length; j++) {
       if (i !== j) {
-        refs.current[j].classList.remove("active");
+        refs.current[j].classList.remove("active-product");
       }
     }
   };
@@ -85,7 +87,7 @@ const ProductsDetails = (props) => {
               ref={addRefs}
               className={`${
                 i === 0
-                  ? "active cursor-pointer"
+                  ? "active-product cursor-pointer"
                   : " cursor-pointer"
               }`}
             >
@@ -99,6 +101,17 @@ const ProductsDetails = (props) => {
         <div className=" text-paragraph md:text-title">
           {chosenProduct.description}
         </div>
+        <div className="flex gap-1">
+        <Rating
+        name={chosenProduct.rating.name}
+        value={chosenProduct.rating.value}
+        precision={chosenProduct.rating.precision}
+        readOnly
+        />
+        <p>{chosenProduct.reviewsNumber}</p>
+
+        </div>
+      
         {chosenProduct.discount ? (
           <div className="flex gap-2 items-center">
             <p className="text-primary-color-red font-semi-bold-lato text-paragraph md:text-title">

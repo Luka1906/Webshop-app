@@ -31,7 +31,7 @@ const NewPassword = () => {
 
   let formIsValid = false;
 
-  if (passwordMatched) {
+  if (enteredPasswordIsValid && passwordMatched ) {
     formIsValid = true;
   };
 
@@ -62,7 +62,7 @@ const NewPassword = () => {
             onChange={passwordChangeHandler}
             onBlur={passwordBlurHandler}
             value={enteredPassword}
-            className="border-gray-300 border p-2 w-[25rem]"
+            className="border-gray-300 border p-2 w-[25rem] outline-4 outline-stone-600 "
           />
         </div>
 
@@ -96,7 +96,7 @@ const NewPassword = () => {
         <input
           name="confirmPassword"
           type={confirmPassShow ? "text" : "password"}
-          className="border-gray-300 border p-2 w-[25rem]"
+          className="border-gray-300 border p-2 w-[25rem] outline-4 outline-stone-600 "
           onChange={confirmPasswordHandler}
         />
         <div
@@ -119,7 +119,7 @@ const NewPassword = () => {
           ""
         )}
       </div>
-      <button disabled={!formIsValid || isSubmitting} className={`mt-8 border-2 bg-orange-200 text-primary-color-red p-1 disabled:cursor-not-allowed`}>
+      <button disabled={!formIsValid || isSubmitting} className={`mt-8  bg-orange-200 text-primary-color-red p-1.5 disabled:cursor-not-allowed  active:scale-110  transform transition-all hover:translate-y-[-3px]  hover:bg-orange-300`}>
           {isSubmitting? 'Updating' : "Update Password"}
         </button>
 

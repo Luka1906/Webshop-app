@@ -1,21 +1,15 @@
-import { useContext, useState } from "react";
-import { Form,Link,useActionData,useNavigation } from "react-router-dom";
-import CartContext from "../../store/cart-context";
-
+import { useState } from "react";
+import { Form, Link, useActionData, useNavigation } from "react-router-dom";
 
 const SignIn = () => {
   const invalidInput = useActionData();
   const navigation = useNavigation();
-  const isSubmitting = navigation.state === "submitting"
+  const isSubmitting = navigation.state === "submitting";
   const [show, setShow] = useState(false);
-  const cartContext = useContext(CartContext)
-
 
   const showPasswordHandler = () => {
     setShow(!show);
   };
-
-
 
   return (
     <div className="flex justify-center">
@@ -23,7 +17,9 @@ const SignIn = () => {
         <h2 className="mb-6 text-primary-color-red font-semi-bold-lato text-subtitle">
           Sign In
         </h2>
-       {invalidInput && <h2 className="text-center error-message text-lg">{invalidInput}</h2>}
+        {invalidInput && (
+          <h2 className="text-center error-message text-lg">{invalidInput}</h2>
+        )}
         <div className="mb-2 flex items-center gap-1">
           <label className="text-sm" htmlFor="email">
             Email
@@ -33,7 +29,7 @@ const SignIn = () => {
         <input
           name="email"
           type="email"
-          className="border-gray-300 border p-2 w-[25rem] mb-2"
+          className="border-gray-300 border p-2 w-[25rem] mb-2 outline-4 outline-stone-600  "
         />
         <div className="mb-2 flex items-center gap-1">
           <label className="text-sm" htmlFor="email">
@@ -45,7 +41,7 @@ const SignIn = () => {
           <input
             name="password"
             type={show ? "text" : "password"}
-            className="border-gray-300 border p-2 w-[25rem]"
+            className="border-gray-300 border p-2 w-[25rem] outline-4 outline-stone-600  "
           />
           <div
             onClick={showPasswordHandler}
@@ -53,15 +49,27 @@ const SignIn = () => {
           >
             {show ? "HIDE" : "SHOW"}
           </div>
-          <Link to="/reset">
           <div className="absolute right-0 mt-2 text-xs underline">
-            Forgot password?
+            <Link to="/reset">
+              <div className="mb-0.5" >
+                Forgot your password?
+              </div>
+            </Link>
+            <div>
+              <Link to="/register">
+              <div >
+                Not registered yet?
+              </div>
+              </Link>
+           
+            </div>
           </div>
-          </Link>
-        
         </div>
-        <button disabled={isSubmitting} className="mt-16 border-2 bg-orange-200 text-primary-color-red p-1">
-          {isSubmitting? "Submitting" : "Sign in"}
+        <button
+          disabled={isSubmitting}
+          className="mt-16  bg-orange-200 text-primary-color-red p-1.5 disabled:cursor-not-allowed active:scale-110  transform transition-all hover:translate-y-[-3px]  hover:bg-orange-300"
+        >
+          {isSubmitting ? "Submitting" : "Sign in"}
         </button>
       </Form>
     </div>

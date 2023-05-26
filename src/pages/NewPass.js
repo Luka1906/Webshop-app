@@ -10,14 +10,14 @@ const NewPass = () => {
 export default NewPass;
 
 export async function action({ request, params }) {
-    console.log(params.token);
-    console.log(params.id)
+    const token = params.token;
+    const id = params.id;
 
     const data = await request.formData();
     const resetData = {
       password: data.get("password"),
-      token: params.token,
-      id: params.id
+      token: token,
+      id: id
     };
     const response = await fetch("http://localhost:4000/api/new-pass/:token/:id", {
       method: "POST",

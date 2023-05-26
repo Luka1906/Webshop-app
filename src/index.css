@@ -64,7 +64,7 @@
 }
 
 @layer utilities {
-  .active {
+  .active-product {
     border: 2px solid #e50010;
   }
   .error-message {
@@ -83,5 +83,12 @@
 .success {
   color: 	#198754;
 }
+
+.active {
+border-bottom: 2px solid #e50010;
+transform: scale(1.15);
+transition: 0.2s;
+}
+
 
 }
