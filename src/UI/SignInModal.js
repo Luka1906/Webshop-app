@@ -11,7 +11,7 @@ const Backdrop = (props) => {
 };
 
 const ModalOverlay = (props) => {
-  return <div className="absolute top-20 right-28 z-50">{props.children}</div>;
+  return <div className="absolute top-20 right-10 z-50">{props.children}</div>;
 };
 const portalElement = document.getElementById(`overlays`);
 

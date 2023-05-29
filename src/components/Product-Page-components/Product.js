@@ -23,7 +23,7 @@ const Product = ({
             backgroundImage: `url(${image})`,
             backgroundPosition: "center",
             backgroundSize: "cover",
-            height: "28vh",
+            height: "13.5rem",
             boxShadow: "inset 0 0 0 1000px rgba(0,0,0,0.05)",
             cursor: "pointer",
           }}

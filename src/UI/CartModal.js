@@ -19,7 +19,7 @@ const ModalOverlay = (props) => {
     initial={"hidden"}
     animate={"visible"}
     exit={"exit"}
-      className=" fixed top-0 right-0  mx-auto w-[20rem] h-full  md:w-[25rem] p-3 rounded-md w z-50 overflow-y-auto bg-neutral-100"
+      className=" fixed top-0 right-0  mx-auto w-[20rem] h-full  md:w-[25rem] p-3  w z-50 overflow-y-auto bg-neutral-100"
     >
       {props.children}
     </motion.div>

@@ -20,7 +20,7 @@ return (
             variants={movingArrowAnimation}
              whileHover={"hover"}
             >
-            <Button className="rounded-md text-[1.2rem] opacity-85  px-3 py-1 md:px-9 md:py-2 active:scale-125 transition-all " type="button"> Shop now <FontAwesomeIcon icon={faArrowRight} className=" ml-2" /></Button>
+            <Button className="rounded-md md:text-[1.2rem] opacity-85  px-3 py-1 md:px-9 md:py-2 active:scale-125 transition-all " type="button"> Shop now <FontAwesomeIcon icon={faArrowRight} className=" ml-2" /></Button>
             </motion.div>
        
         </Link>

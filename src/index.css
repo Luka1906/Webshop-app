@@ -57,10 +57,16 @@
     .nextBttn {
       display: none;
     }
-    
-  };
+    .info-modal {
+      padding: 0 5.5rem;
+    }
 
+    .x-icon {
+      padding: 0 3.5rem;
+      width: 1.1rem;
+    }
 
+  }
 }
 
 @layer utilities {
@@ -74,21 +80,12 @@
   .invalid input {
     border: 1px solid #b40e0e;
     background-color: #fddddd;
-
   }
   .invalid input:focus {
-  border-color: #ff8800;
-  background-color: #fbe8d2;
-}
-.success {
-  color: 	#198754;
-}
-
-.active {
-border-bottom: 2px solid #e50010;
-transform: scale(1.15);
-transition: 0.2s;
-}
-
-
+    border-color: #ff8800;
+    background-color: #fbe8d2;
+  }
+  .success {
+    color: #198754;
+  }
 }

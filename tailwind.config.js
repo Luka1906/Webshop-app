@@ -6,6 +6,7 @@ module.exports = {
     "./public/index.html"
   ],
   theme: {
+
     extend: {
       colors: {
         'primary-color-light-orange': "#F9AF23",
@@ -47,5 +48,6 @@ module.exports = {
   plugins: [],
 
 }
+
 
 

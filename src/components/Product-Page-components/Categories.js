@@ -11,8 +11,8 @@ const Categories = ({
 }) => {
   return (
     <div className="my-16">
-      <h1 className="text-center text-paragraph font-bold-lato">{title}</h1>
-      <div className="flex flex-wrap md:flex-nowrap justify-around w-[60vw] m-auto text-xs gap-3 my-12">
+      <h1 className="text-center text-paragraph font-bold-lato md:mt-0 mt-56 ">{title}</h1>
+      <div className="flex flex-wrap md:flex-nowrap justify-around w-[60vw] mx-auto text-xs gap-3 my-12 ">
         <button
           onClick={() => {
             setItems(AllItems);

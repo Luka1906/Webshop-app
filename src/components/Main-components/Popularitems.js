@@ -37,7 +37,7 @@ const PopularItems = () => {
   return (
     <>
       <Banner onShow={visibleHandler}>
-        <h1 className=" text-paragraph text-primary-color-red md:w-[45rem] w-5/6 ">
+        <h1 className=" text-paragraph text-primary-color-red md:w-[45rem] w-[12rem] ">
           New Serbian jerseys added to Spring Sale! Up to 60% off online &
           in-store
         </h1>
@@ -50,7 +50,7 @@ const PopularItems = () => {
         <div className="relative h-[40rem] bg-contain w-[60rem] bg-center bg-jersey-pic flex justify-end">
           <div className=" relative right-10 opacity-90 flex flex-col justify-around h-[75px] rounded-md  w-[210px]  top-40 p-3 bg-text-color text-slate-50 before:content-[''] before:top-1/2 before:border-solid before:border-transparent before:h-0 before:w-0 before:absolute before:pointer-events-none before:border-text-color  after:right-full after:top-1/2 after:border-solid after:border-transparent after:content-[''] after:h-0 after:w-0 after:absolute after:pointer-events-none after:border-slate-50 after:border-r-text-color after:border-[12px] after:my-[-12px]">
             <div className=" bottom-4 flex gap-2 ">
-              <p className=" text-sm">$90</p>
+              <p className=" text-sm">$60</p>
               <p className="line-through text-sm ">$150</p>
             </div>
             <p className="text-sm"> Serbia Football Soccer Jersey</p>

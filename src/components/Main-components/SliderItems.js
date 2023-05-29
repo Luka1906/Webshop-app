@@ -7,7 +7,7 @@ const SliderItems = ({ image, title, price, discount,id,description }) => {
     <>
       <div className=" m-auto p-8">
         <DiscountContainer
-          className="absolute right-0 top-3"
+          className="absolute right-16 md:right-0 top-3"
           discount={discount}
         />
 

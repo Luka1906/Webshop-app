@@ -75,12 +75,12 @@ const RegisterForm = () => {
   const passwordInputClasses = passwordHasError? 'invalid' : "";
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center md:mt-0 mt-[6.5rem] ">
       <Form method="POST" className="flex flex-col">
         <h2 className="mb-6 text-primary-color-red font-semi-bold-lato text-subtitle">
           Register here
-        </h2>
-        <div className="mb-2 flex items-center gap-1">
+        </h2> 
+        <div className="mb-2 flex items-center gap-1 ">
           <label className="text-sm" htmlFor="name">
             Name
           </label>
@@ -93,7 +93,7 @@ const RegisterForm = () => {
           onChange={nameChangeHandler}
           onBlur={nameBlurHandler}
           value={enteredName}
-          className="border-gray-300 border p-2 w-[25rem] mb-2 outline-4 outline-stone-600  "
+          className="border-gray-300 border p-2 md:w-[25rem] w-[18rem]  mb-2 outline-4 outline-stone-600  "
         />
           {nameHasError && (
               <p className="error-message text-xs">
@@ -102,7 +102,7 @@ const RegisterForm = () => {
             )}
         </div>
       
-        <div className="mb-2 flex items-center gap-1">
+        <div className="mb-2 flex items-center gap-1 ">
           <label className="text-sm" htmlFor="email">
             Email
           </label>
@@ -115,7 +115,7 @@ const RegisterForm = () => {
           onChange={emailChangeHandler}
           onBlur={emailBlurHandler}
           value={enteredEmail}
-          className="border-gray-300 border p-2 w-[25rem] mb-2 outline-4 outline-stone-600  "
+          className="border-gray-300 border p-2 md:w-[25rem] w-[18rem]  mb-2 outline-4 outline-stone-600  "
         />  
          {emailHasError && (
           <p className="error-message text-xs">
@@ -139,7 +139,7 @@ const RegisterForm = () => {
             onChange={passwordChangeHandler}
             onBlur={passwordBlurHandler}
             value={enteredPassword}
-            className="border-gray-300 border p-2 w-[25rem] outline-4 outline-stone-600  "
+            className="border-gray-300 border p-2 md:w-[25rem] w-[18rem]  outline-4 outline-stone-600  "
           />
           </div>
       
@@ -151,7 +151,7 @@ const RegisterForm = () => {
           </div>
         </div>
         {passwordHasError && (
-            <ul className="error-message text-xs">
+            <ul className="error-message text-xs w-[18rem]">
              Password must:
               <li>Be minimum 6 characters and maximum 30 characters long</li>
               <li>Have one uppercase letter</li>
@@ -169,7 +169,7 @@ const RegisterForm = () => {
           <input
             name="confirmPassword"
             type={confirmPassShow ? "text" : "password"}
-            className="border-gray-300 border p-2 w-[25rem] outline-4 outline-stone-600  "
+            className="border-gray-300 border p-2 md:w-[25rem] w-[18rem]  outline-4 outline-stone-600  "
             onChange={confirmPasswordHandler}
           />
           <div
@@ -180,9 +180,9 @@ const RegisterForm = () => {
           </div>
         </div>
         <div className="relative">
-        {confirmPassword === enteredPassword && enteredPasswordIsValid ? <p className="absolute right-[-2rem] top-[-1.8rem]"><GiConfirmed className="success text-lg"/></p> : ""}
+        {confirmPassword === enteredPassword && enteredPasswordIsValid ? <p className="absolute right-0 md:right-[-2rem] top-[0.2rem] md:top-[-1.8rem]"><GiConfirmed className="success text-lg"/></p> : ""}
         {existingUserError && (
-              <p className="error-message text-center relative top-3 text-[1.15rem]">{existingUserError}</p>
+              <p className="error-message text-center relative top-4 md:top-3 md:text-[1.15rem]">{existingUserError}</p>
             )}
 
         </div>

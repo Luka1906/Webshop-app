@@ -46,7 +46,7 @@ const NewPassword = () => {
   const passwordInputClasses = passwordHasError ? "invalid" : "";
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center  md:mt-0 mt-[6.5rem]  ">
     <Form method="POST" className="flex flex-col">
     <div className="mb-2 flex items-center gap-1">
         <label className="text-sm" htmlFor="password">
@@ -62,7 +62,7 @@ const NewPassword = () => {
             onChange={passwordChangeHandler}
             onBlur={passwordBlurHandler}
             value={enteredPassword}
-            className="border-gray-300 border p-2 w-[25rem] outline-4 outline-stone-600 "
+            className="border-gray-300 border p-2 w-[18rem] md:w-[25rem] outline-4 outline-stone-600 "
           />
         </div>
 
@@ -78,7 +78,7 @@ const NewPassword = () => {
         </div>
       </div>
       {passwordHasError && (
-        <ul className="error-message text-xs">
+        <ul className="error-message text-xs w-[18rem]">
           Password must:
           <li>Be minimum 6 characters and maximum 30 characters long</li>
           <li>Have one uppercase letter</li>
@@ -96,7 +96,7 @@ const NewPassword = () => {
         <input
           name="confirmPassword"
           type={confirmPassShow ? "text" : "password"}
-          className="border-gray-300 border p-2 w-[25rem] outline-4 outline-stone-600 "
+          className="border-gray-300 border p-2 w-[18rem] md:w-[25rem] outline-4 outline-stone-600 "
           onChange={confirmPasswordHandler}
         />
         <div
@@ -112,7 +112,7 @@ const NewPassword = () => {
       </div>
       <div className="relative">
         {confirmPassword === enteredPassword && enteredPasswordIsValid ? (
-          <p className="absolute right-[-2rem] top-[-1.8rem]">
+          <p className="absolute right-0 md:right-[-2rem] top-[0.2rem] md:top-[-1.8rem]">
             <GiConfirmed className="success text-lg" />
           </p>
         ) : (

@@ -7,25 +7,30 @@ import SearchForm from "./SearchForm";
 
 const Products = () => {
   const [items, setItems] = useState(
-    JSON.parse(localStorage.getItem("items")) || AllItems
+    JSON.parse(sessionStorage.getItem("items")) || AllItems
   );
 
   useEffect(() => {
-    localStorage.setItem("items", JSON.stringify(items));
+    sessionStorage.setItem("items", JSON.stringify(items));
   }, [items]);
 
   const [pageNumber, setPageNumber] = useState(
-    localStorage.getItem("current-page") || 0
+    sessionStorage.getItem("current-page") || 0
   );
 
   useEffect(() => {
-    localStorage.setItem("current-page", pageNumber);
+    sessionStorage.setItem("current-page", pageNumber);
   }, [pageNumber]);
 
-  const [title, setTitle] = useState(localStorage.getItem("title") || "All");
+  useEffect(() => {
+    sessionStorage.setItem("active-page", "paginationActive");
+  }, []);
+
+
+  const [title, setTitle] = useState(sessionStorage.getItem("title") || "All");
 
   useEffect(() => {
-    localStorage.setItem("title", title);
+    sessionStorage.setItem("title", title);
   }, [title]);
 
   const itemsPerPage = 8;
@@ -48,6 +53,7 @@ const Products = () => {
         />
       );
     });
+  
 
   const pageCount = Math.ceil(items.length / itemsPerPage);
 
@@ -102,14 +108,14 @@ const Products = () => {
       />
 
       <div className="flex flex-wrap w-[80vw] mx-auto m-16  gap-6">
-        {displayItems}
+        {displayItems.length === 0? <p className="m-auto text-paragraph text-primary-color-red font-semi-bold-lato">No items found!</p> : displayItems}
       </div>
 
       <ReactPaginate
         pageCount={pageCount}
         onPageChange={changePageHandler}
-        forcePage={pageNumber}
-        containerClassName={"paginationBttns"}
+        forcePage={+pageNumber}
+        containerClassName={`paginationBttns`}
         previousLinkClassName={`previousBttn`}
         nextLinkClassName={"nextBttn"}
         activeClassName={"paginationActive"}

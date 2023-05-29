@@ -1,10 +1,9 @@
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import CartModal from "../../../UI/CartModal";
 import CartContext from "../../../store/cart-context";
 import CartItems from "./CartItems";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import Button from "../../../UI/Button";
 import { Link } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import PayButton from "../../Auth-component/PayButon";
@@ -44,7 +43,7 @@ const Cart = () => {
 
   const cartContent = (
     <>
-      <div className="overflow-y-scroll h-[34rem]">{cartItems}</div>
+      <div className="overflow-auto h-2/3">{cartItems}</div>
 
       <div className="flex justify-center"> 
         <div className=" border-t-2 w-[85%] flex flex-col  justify-center pt-3 absolute  bottom-10">
@@ -54,6 +53,7 @@ const Cart = () => {
               ${cartContext.totalAmount.toFixed(2)}
             </h2>
           </div>
+        
        
             <PayButton cartItems= {cartContext.items} >
             </PayButton>
@@ -82,11 +82,11 @@ const Cart = () => {
         {cartContext.openCart && (
           <CartModal onClose={cartContext.closeCartHandler}>
             <div className="flex w-full justify-center font-semi-bold-lato">
-              <h2 className="mb-3">Your Shopping Cart</h2>
+              <h2 className="mb-4 p-2">Your Shopping Cart</h2>
               <FontAwesomeIcon
                 onClick={cartContext.closeCartHandler}
                 icon={faXmark}
-                className="absolute right-6 text-[1.5rem] cursor-pointer"
+                className="absolute right-3 p-2 w-6 text-[1.5rem] cursor-pointer duration-75 hover:bg-slate-200 hover:rounded-full active:scale-125"
               />
             </div>
             {hasItems ? cartContent : emptyCartContent}

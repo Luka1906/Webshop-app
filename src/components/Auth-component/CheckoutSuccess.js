@@ -31,11 +31,12 @@ const CheckOutSuccess = () => {
       variants={orderSuccessAnimation}
       initial={"hidden"}
       animate={"visible"}
+      className="h-60"
     >
-      <Card className="m-auto rounded-md w-[25rem]">
-        <div className="flex flex-col items-center gap-2 mt-10 mb-10 p-5">
-          <div className="flex items-center gap-1">
-            <h2 className="text-title text-primary-color-red font-semi-bold-lato">
+      <Card className="m-auto rounded-md w-[18rem] md:w-[25rem] text-sm md:text-large text-center">
+        <div className="flex flex-col items-center gap-2 mt-32 md:mt-10  p-5">
+          <div className="flex items-center gap-0.5 md:gap-1">
+            <h2 className="text-paragraph md:text-title text-primary-color-red font-semi-bold-lato">
               Thank you for your order!
             </h2>
             <MdOutlineCelebration className="text-2xl text-orange-600" />

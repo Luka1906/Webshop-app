@@ -4,10 +4,10 @@ const ResetPassword = () => {
   const noEmailFoundError = useActionData();
   console.log(noEmailFoundError)
   return (
-    <div className="flex flex-col items-center gap-8">
+    <div className="flex flex-col items-center gap-8 md:mt-0 mt-[6.5rem]">
       <div className="flex flex-col items-center gap-2">
         <h2 className="text-title text-primary-color-red">Forgot password?</h2>
-        <p className="text-xs">
+        <p className="text-xs w-[18rem] md:w-[25rem] text-justify ">
           Please enter the email address you used to create your account, and
           we'll send you a link to reset your password
         </p>
@@ -22,7 +22,7 @@ const ResetPassword = () => {
         <input
           name="email"
           type="email"
-          className="border-gray-300 border p-2 w-[25rem] mb-2 outline-4 outline-stone-600   "
+          className="border-gray-300 border p-2 w-[18rem] md:w-[25rem] mb-2 outline-4 outline-stone-600   "
         />
         <div>
         {noEmailFoundError && <p className="text-center error-message">{noEmailFoundError}</p>}

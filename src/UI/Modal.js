@@ -17,7 +17,7 @@ const ModalOverlay = props => {
     initial={"hidden"}
     animate={"visible"}
     exit={"exit"}
-    className=" fixed top-[20vh]  transform translate-x-[-50%] left-[50%] mx-auto  w-[500px] p-3 rounded-md w z-30 overflow-y-hidden  bg-neutral-100">
+    className=" info-modal fixed top-[20vh]  transform translate-x-[-50%] left-[50%] w-[28rem] md:w-[30rem] p-3  z-30 overflow-y-hidden  bg-neutral-100">
        {props.children}
     </motion.div>
 

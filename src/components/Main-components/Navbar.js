@@ -8,10 +8,14 @@ import { motion } from "framer-motion";
 import { cartAnimation } from "../../animations/Cart-animation";
 import SignInPopUp from "../SingIn-components/SignInPopUp";
 import { Form } from "react-router-dom";
+import { BsSearch } from "react-icons/bs";
+
+
+import { useMediaQuery } from "@mui/material";
 
 const Navbar = ({ pathname }) => {
+  
   const token = useRouteLoaderData("root");
-
 
   const cartContext = useContext(CartContext);
   const numberOfCartItems = cartContext.items.reduce((curNumber, item) => {
@@ -41,6 +45,8 @@ const Navbar = ({ pathname }) => {
   const signInHoverOutHandler = () => {
     setSignInPopUp(false);
   };
+
+  const isMobile = useMediaQuery("(max-width:768px)");
   return (
     <div className="relative">
       <div
@@ -48,51 +54,53 @@ const Navbar = ({ pathname }) => {
           pathname === "/" ? "absolute top-0 z-30" : ""
         } w-full h-1/7 text-black`}
       >
-        <nav className="flex justify-between items-center   px-10">
-          <div className="flex flex-col items-center ">
-            <div className="flex gap-1.5 ">
-              <select
-                className="outline-none cursor-pointer bg-transparent "
-                name="languages"
-              >
-                <option value="EN">EN</option>
-                <option value="SERB">SRB</option>
-              </select>
-              <Link to="/">
-                <Logo />
-              </Link>
-            </div>
+        <nav className="flex justify-around md:justify-between items-center  md:px-8">
+          <div className="md:static absolute left-[-1rem] top-[-0.5rem]">
+            <Link to="/">
+              <Logo />
+            </Link>
           </div>
+            <div className="flex items-center gap-5 md:static absolute right-[-1rem] top-[2.4rem]">
+              <NavLink
+                className={({ isActive }) => (isActive ? "border-b-2 border-primary-color-red" : undefined)}
+                to="/"
+              >
+                {isMobile? "" : <p>Home</p>}
+              </NavLink>
+              <NavLink
+                className={({ isActive }) => (isActive ? `${isMobile? "" : "border-b-2 border-primary-color-red" }` : undefined)}
+                to="products"
+              >
+               {isMobile? <BsSearch className="text-2xl"/> : <p>Categories</p>} 
+              </NavLink>
 
-          <div className="flex  items-center gap-5 ">
-            <NavLink className={({isActive}) => isActive? "active" : undefined} to="/">
-              <p className="hidden lg:block">Home</p>
-            </NavLink>
-            <NavLink className={({isActive}) => isActive? "active" : undefined} to="products">
-              <p className="hidden lg:block">Categories</p>
-            </NavLink>
+              <div className=" flex ">
+                <div className="cursor-pointer">
+                  <img
+                    onMouseOver={signInHoverHandler}
+                    src={user}
+                    alt="signUp-icon"
+                  />
+                </div>
 
-            <div className="flex flex-col relative ">
-              <div className="cursor-pointer">
-                <img
-                  onMouseOver={signInHoverHandler}
-                  src={user}
-                  alt="signUp-icon"
-                />
+                {singInPopUp && <SignInPopUp onClose={signInHoverOutHandler} />}
               </div>
-
-              {singInPopUp && <SignInPopUp onClose={signInHoverOutHandler} />}
-            </div>
-            {token ? (
-              <Form action="logout" method="POST">
-                <button>Logout</button>
-              </Form>
-            ) : (
-              <NavLink className={({isActive}) => isActive? "active" : undefined} to="signIn">Sign in</NavLink>
-            )}
-
-            <div
-              className="flex cursor-pointer"
+              {token ? (
+                <Form action="logout" method="POST">
+           {isMobile? "" : <button className="cursor-pointer">Sign out</button> } 
+                </Form>
+              ) : (
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "border-b-2 border-primary-color-red" : undefined
+                  }
+                  to="signIn"
+                >
+         {isMobile? "" : <p>Sign in</p> } 
+                </NavLink>
+              )}
+                  <div
+              className="flex cursor-pointer md:static relative right-4  "
               onClick={cartContext.openCartHandler}
             >
               <motion.img
@@ -101,12 +109,16 @@ const Navbar = ({ pathname }) => {
                 animate={cartIsAnimated ? "animate" : ""}
                 src={bag}
                 alt="cart"
+                className=""
               />
               <p className="relative text-sm right-6 top-1.5 text-center w-5 ">
                 {numberOfCartItems}
               </p>
             </div>
-          </div>
+            </div>
+        
+      
+          {/* <HiBars3 className="mr-1 text-[1.8rem] text-slate-700 cursor-pointer" /> */}
         </nav>
       </div>
     </div>

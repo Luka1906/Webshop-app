@@ -5,7 +5,7 @@ const Banner = (props) => {
   
 return (
 
-    <div className=" flex shadow- justify-center items-center bg-orange-100  rounded-md scale-90 md:scale-100 md:w-11/12 lg:w-4/6 mx-auto my-10 p-5 md:p-8 text-center">
+    <div className=" flex shadow- justify-center items-center bg-orange-100  rounded-md scale-90 md:scale-100 md:w-11/12 lg:w-4/6 mx-auto my-10 p-6 md:p-8 text-center">
          <div className="flex flex-col items-center ">
         {props.children}
     </div>

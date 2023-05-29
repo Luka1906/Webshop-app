@@ -13,12 +13,14 @@ import ResetPass from "./pages/ResetPass";
 import {action as resetEmailAction} from './pages/ResetPass';
 import {action as newPassAction} from './pages/NewPass'
 import NewPass from "./pages/NewPass";
+import ErrorPage from "./pages/Error";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HeaderRootLayout />,
+    errorElement: <ErrorPage/>,
     loader: tokenLoader,
     id: "root",
     children: [
