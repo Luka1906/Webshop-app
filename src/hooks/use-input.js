@@ -15,17 +15,14 @@ const useInput = (validateValue) => {
     setIsFocused(true);
   };
 
-  const reset = () => {
-    setEnteredValue("");
-    setIsFocused(false)
-  }
+
   return {
     value: enteredValue,
     isValid: valueIsValid,
     hasError,
     valueChangeHandler,
     inputBlurHandler,
-    reset
+  
   };
 };
 

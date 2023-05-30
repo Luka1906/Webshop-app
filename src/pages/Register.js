@@ -30,7 +30,6 @@ export async function action ({request,params}) {
     }
 
     if(!response.ok) {
-        console.log(response)
         throw json({message: 'Could not submit the form'}, {status:500});
        
     }

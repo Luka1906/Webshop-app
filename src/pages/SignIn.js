@@ -29,7 +29,6 @@ export async function action({ request, params }) {
   }
 
   if (!response.ok) {
-    console.log(response);
     throw json({ message: "Could not logIn" }, { status: 500 });
   }
   const resData = await response.json();

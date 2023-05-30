@@ -1,12 +1,7 @@
 import CheckOutSuccess from "../components/Auth-component/CheckoutSuccess";
 
 const CheckOutPage = () => {
+  return <CheckOutSuccess />;
+};
 
-    return (
-        <CheckOutSuccess/>
-    )
-
-}
-
-export default CheckOutPage
-
+export default CheckOutPage;

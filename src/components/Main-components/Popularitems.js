@@ -48,7 +48,7 @@ const PopularItems = () => {
 
       <div className="  flex flex-col  items-center  w-screen ">
         <div className="relative h-[40rem] bg-contain w-[60rem] bg-center bg-jersey-pic flex justify-end">
-          <div className=" relative right-10 opacity-90 flex flex-col justify-around h-[75px] rounded-md  w-[210px]  top-40 p-3 bg-text-color text-slate-50 before:content-[''] before:top-1/2 before:border-solid before:border-transparent before:h-0 before:w-0 before:absolute before:pointer-events-none before:border-text-color  after:right-full after:top-1/2 after:border-solid after:border-transparent after:content-[''] after:h-0 after:w-0 after:absolute after:pointer-events-none after:border-slate-50 after:border-r-text-color after:border-[12px] after:my-[-12px]">
+          <div className=" relative right-80 md:right-28 lg:right-10 opacity-90 top-64 md:top-40  flex flex-col justify-around h-[75px] rounded-md  w-[210px] md:scale-100 scale-90 p-3 bg-text-color text-slate-50 before:content-[''] before:top-1/2 before:border-solid before:border-transparent before:h-0 before:w-0 before:absolute before:pointer-events-none before:border-text-color  after:right-full after:top-1/2 after:border-solid after:border-transparent after:content-[''] after:h-0 after:w-0 after:absolute after:pointer-events-none after:border-slate-50 after:border-r-text-color after:border-[12px] after:my-[-12px]">
             <div className=" bottom-4 flex gap-2 ">
               <p className=" text-sm">$60</p>
               <p className="line-through text-sm ">$150</p>

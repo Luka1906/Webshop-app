@@ -75,7 +75,7 @@ const Navbar = ({ pathname }) => {
               </NavLink>
 
               <div className=" flex ">
-                <div className="cursor-pointer">
+                <div>
                   <img
                     onMouseOver={signInHoverHandler}
                     src={user}
@@ -100,7 +100,7 @@ const Navbar = ({ pathname }) => {
                 </NavLink>
               )}
                   <div
-              className="flex cursor-pointer md:static relative right-4  "
+              className="flex items-center cursor-pointer md:static relative right-4  "
               onClick={cartContext.openCartHandler}
             >
               <motion.img
@@ -111,14 +111,11 @@ const Navbar = ({ pathname }) => {
                 alt="cart"
                 className=""
               />
-              <p className="relative text-sm right-6 top-1.5 text-center w-5 ">
+             { numberOfCartItems <=99 ? <p className="relative text-sm  right-6 top-0.5 text-center w-5 ">
                 {numberOfCartItems}
-              </p>
+              </p> : <p className="ml-2 mr-2 text-sm">({numberOfCartItems})</p>}
             </div>
             </div>
-        
-      
-          {/* <HiBars3 className="mr-1 text-[1.8rem] text-slate-700 cursor-pointer" /> */}
         </nav>
       </div>
     </div>

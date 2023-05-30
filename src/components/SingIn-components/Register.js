@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link,useActionData, useNavigation } from "react-router-dom";
+import {useActionData, useNavigation } from "react-router-dom";
 import { Form } from "react-router-dom";
 import useInput from "../../hooks/use-input";
 import {GiConfirmed} from 'react-icons/gi'
@@ -27,7 +27,6 @@ const RegisterForm = () => {
     hasError: nameHasError,
     valueChangeHandler: nameChangeHandler,
     inputBlurHandler: nameBlurHandler,
-    reset: resetNameInput,
   } = useInput((value) => value.trim().length >= 6 && value.trim().length <=30);
 
   const {
@@ -36,7 +35,6 @@ const RegisterForm = () => {
     hasError: emailHasError,
     valueChangeHandler: emailChangeHandler,
     inputBlurHandler: emailBlurHandler,
-    reset: resetEmailInput,
   } = useInput((value) => emailRegex.test(value));
 
   const {
@@ -45,7 +43,6 @@ const RegisterForm = () => {
     hasError: passwordHasError,
     valueChangeHandler: passwordChangeHandler,
     inputBlurHandler: passwordBlurHandler,
-    reset: resetPasswordInput,
   } = useInput((value) => passwordRegex.test(value));
 
   const confirmPasswordHandler = (event) => {

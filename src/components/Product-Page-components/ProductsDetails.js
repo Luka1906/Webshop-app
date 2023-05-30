@@ -34,7 +34,6 @@ const ProductsDetails = () => {
     if (el && !refs.current.includes(el)) {
       refs.current.push(el);
     }
-    console.log(refs);
   };
 
   const data = useLocation().state;
@@ -57,7 +56,7 @@ const ProductsDetails = () => {
   }, [chosenProduct]);
 
   const increaseHandler = () => {
-    setQuantity((prevQuantity) => prevQuantity + 1);
+    setQuantity((prevQuantity) => Math.min(prevQuantity + 1, 5))
   };
 
   const decreaseHandler = () => {

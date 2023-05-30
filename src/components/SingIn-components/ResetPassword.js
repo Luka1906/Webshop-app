@@ -2,7 +2,6 @@ import { Form, useActionData } from "react-router-dom";
 
 const ResetPassword = () => {
   const noEmailFoundError = useActionData();
-  console.log(noEmailFoundError)
   return (
     <div className="flex flex-col items-center gap-8 md:mt-0 mt-[6.5rem]">
       <div className="flex flex-col items-center gap-2">

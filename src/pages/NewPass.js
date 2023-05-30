@@ -32,7 +32,6 @@ export async function action({ request, params }) {
     }
 
     if(!response.ok) {
-        console.log(response)
         throw json({message: 'Could not update a password'}, {status:500});
     }
 

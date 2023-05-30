@@ -20,7 +20,6 @@ const NewPassword = () => {
     hasError: passwordHasError,
     valueChangeHandler: passwordChangeHandler,
     inputBlurHandler: passwordBlurHandler,
-    reset: resetPasswordInput,
   } = useInput((value) => passwordRegex.test(value));
 
   const confirmPasswordHandler = (event) => {

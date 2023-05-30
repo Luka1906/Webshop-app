@@ -59,7 +59,6 @@ const Products = () => {
 
   const changePageHandler = ({ selected }) => {
     setPageNumber(selected);
-    console.log(selected);
   };
 
   useEffect(() => {

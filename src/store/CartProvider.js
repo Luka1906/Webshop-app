@@ -12,7 +12,6 @@ const cartReducer = (state,action) => {
         const updatedTotalAmount =   state.totalAmount +  (action.item.discountPrice? action.item.discountPrice : action.item.price) * action.item.amount
         const existingCartItemIndex = state.items.findIndex(item => item.id === action.item.id);
         const existingCartItemElement = state.items[existingCartItemIndex];
-        console.log(existingCartItemElement)
         let updatedItems;
         if(existingCartItemElement) {
             const updatedItem = {
@@ -79,14 +78,6 @@ const cartReducer = (state,action) => {
        }
     }
 
-    // if(action.type ==="OPEN") {
-    //     return {...state,open:true}
-    // }
-
-    // if(action.type ==="CLOSE") {
-    //     return {...state,open:false}
-    // }
-
     return defaultCartState
 }
   
@@ -96,7 +87,6 @@ const CartProvider = (props) => {
     const [openCart, setOpenCart] = useState(false);
     
     const addToCartHandler = item => {
-        console.log(item)
         dispatchCartFunction({type:"ADD", item: item})
     };
 
@@ -111,13 +101,11 @@ const CartProvider = (props) => {
     const openCartHandler = () => {
         setOpenCart(true);
         document.body.style.overflow = "hidden"
-        // dispatchCartFunction({type: "OPEN"})
 
     };
     const closeCartHandler = () => {
         setOpenCart(false)
         document.body.style.overflow= "scroll"
-        // dispatchCartFunction({type: "CLOSE"})
 
     }
    

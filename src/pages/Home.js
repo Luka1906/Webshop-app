@@ -1,8 +1,7 @@
-import MainPage from "../components/Main-components/Main"
+import MainPage from "../components/Main-components/Main";
 
 const HomePage = () => {
-    return <MainPage/>
+  return <MainPage />;
+};
 
-}
-
-export default HomePage
+export default HomePage;

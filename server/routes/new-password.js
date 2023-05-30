@@ -15,8 +15,6 @@ router.post("/", async (req, res, next) => {
   const { error } = password.validate(req.body.password);
 
   if (error) {
-    console.log(error);
-
     return res.status(400).send(error.details[0].message);
   }
 

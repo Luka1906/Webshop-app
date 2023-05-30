@@ -1,4 +1,4 @@
-import { Link, redirect } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { getAuthToken } from "../../util/auth";
 import CartContext from "../../store/cart-context";
 import { useContext } from "react";
