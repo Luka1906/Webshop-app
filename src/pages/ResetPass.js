@@ -1,6 +1,6 @@
 import ResetPassword from "../components/SingIn-components/ResetPassword";
 import ResetPasswordMessage from "../components/SingIn-components/ResetPasswordAlert";
-import { redirect } from "react-router-dom";
+
 
 
 const ResetPass = () => {
