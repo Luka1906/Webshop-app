@@ -19,7 +19,7 @@ export async function action({ request, params }) {
       token: token,
       id: id
     };
-    const response = await fetch("http://localhost:4000/api/new-pass/:token/:id", {
+    const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/new-pass/:token/:id`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -14,7 +14,7 @@ export async function action({ request, params }) {
   const resetData = {
     email: data.get("email"),
   };
-  const response = await fetch("http://localhost:4000/api/reset", {
+  const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/reset`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

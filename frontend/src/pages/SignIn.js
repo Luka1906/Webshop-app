@@ -16,7 +16,7 @@ export async function action({ request, params }) {
     email: data.get("email"),
     password: data.get("password"),
   };
-  const response = await fetch("http://localhost:4000/api/login", {
+  const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/login`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
