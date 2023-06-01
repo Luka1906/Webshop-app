@@ -19,7 +19,7 @@ module.exports = {
        
       },
       backgroundImage: {
-        'main-wallpaper': "url('https://res.cloudinary.com/dodlxk4hg/image/upload/v1684289354/React%20Webshop/image1_rnik6p.avif')",
+        'main-wallpaper': "url(https://res.cloudinary.com/dodlxk4hg/image/upload/v1685655615/shopping_sd56ja.webp)",
         'jersey-pic': "url(https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286040/React%20Webshop/image4_udgfsx.webp)",
         'rakija-pic':  "url(https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286057/React%20Webshop/image7_qaitjz.jpg)"
 

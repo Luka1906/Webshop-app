@@ -7,24 +7,24 @@ const image6 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286053/Re
 const image7 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286060/React%20Webshop/image8_tnpuzr.webp";
 const image8 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286064/React%20Webshop/image9_p965vo.jpg";
 const image9 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286067/React%20Webshop/image10_im9y9z.webp" ;
-const image10 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286092/React%20Webshop/image11_uf5nkn.avif";
-const image11 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286099/React%20Webshop/image12_izcpev.avif";
+const image10 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685655855/djokovic_bxmd9x.webp";
+const image11 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685656026/serbia-golden-necklace_pzjla9.jpg";
 const image12 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286101/React%20Webshop/image13_yimh7q.jpg";
 const image13 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286105/React%20Webshop/image14_uhxa0i.webp";
 const image14 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286108/React%20Webshop/image15_djnf8t.jpg";
-const image15 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286110/React%20Webshop/image16_jtg2yt.avif";
+const image15 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685656410/prayer-rope_psuwkt.webp";
 const image16 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286113/React%20Webshop/image17_ygso4j.webp";
 const image17 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286115/React%20Webshop/image18_wpginl.jpg";
 const image18 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286039/React%20Webshop/image3_wyqvy6.png";
 const image19 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286121/React%20Webshop/image20_dk2jsn.webp";
 const image20 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286123/React%20Webshop/image21_xpkdyg.jpg";
 const image21 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286126/React%20Webshop/image22_dsmqxi.jpg";
-const image22 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286128/React%20Webshop/image23_t93odb.avif";
+const image22 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685656516/il_1588xN.4445871262_on32_kwtr9k.webp";
 const image23 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286131/React%20Webshop/image24_g8exo9.jpg";
 const image24 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286135/React%20Webshop/image25_bwtnxx.png";
 const image25 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286136/React%20Webshop/image26_m040zr.jpg";
 const image26 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286139/React%20Webshop/image27_ceyaiv.jpg";
-const image27 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286142/React%20Webshop/image28_izvwti.avif";
+const image27 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685657009/il_1588xN.4741041260_fx1q_nvd1wr.jpg";
 const image28 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286144/React%20Webshop/image29_t6re5l.jpg";
 const image29 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286147/React%20Webshop/image30_yj1s7b.jpg";
 const image30 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684286152/React%20Webshop/image31_fp1mvf.jpg";
@@ -68,7 +68,7 @@ const additional28 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287
 const additional29 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287552/React%20Webshop/additional29_ppb6zs.webp" ;
 const additional30 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287553/React%20Webshop/additional30_imylnr.jpg" ;
 const additional31 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287556/React%20Webshop/additional31_gnzvmc.jpg" ;
-const additional32 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287557/React%20Webshop/additional32_fr1tqp.avif" ;
+const additional32 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685657232/SRB_gold_weit_1000x_pjcmnl.webp" ;
 const additional33 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287559/React%20Webshop/additional33_sfjf1c.jpg" ;
 const additional34 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287562/React%20Webshop/additional34_rm2vek.jpg" ;
 const additional35 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287564/React%20Webshop/additional35_s1rxme.webp" ;
@@ -82,7 +82,7 @@ const additional42 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287
 const additional43 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287582/React%20Webshop/additional43_ixug3i.jpg" ;
 const additional44 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287583/React%20Webshop/additional44_kttp9q.jpg";
 const additional45 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287585/React%20Webshop/additional45_sa1zju.jpg";
-const additional46 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287586/React%20Webshop/additional46_bfw5kl.avif" ;
+const additional46 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685657327/il_1588xN.4493215429_k8tb_pmuvza.webp" ;
 const additional47 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287588/React%20Webshop/additional47_zew7cb.jpg" ;
 const additional48 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287590/React%20Webshop/additional48_lxvggk.webp" ;
 const additional49 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287597/React%20Webshop/additional49_uqsfzi.webp" ;
@@ -105,6 +105,8 @@ const additional66 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287
 const additional67 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287639/React%20Webshop/additional67_m7plml.png" ;
 const additional68 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287640/React%20Webshop/additional68_fyoffy.jpg" ;
 const additional69 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1684287647/React%20Webshop/additional69_tqxbhm.webp" ;
+
+
 
 
 
