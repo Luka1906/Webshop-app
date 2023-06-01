@@ -37,7 +37,7 @@ router.post("/", (req, res, next) => {
             subject: "Password reset",
             html: `
                         <p> You requested a password reset </p>
-                        <p>Click this <a href="http://localhost:3000/new-pass/${token}/${savedUser._id}"> link to set a new password. </p>
+                        <p>Click this <a href="${process.env.CLIENT_URL}/new-pass/${token}/${savedUser._id}"> link to set a new password. </p>
                     `,
           };
           sgMail.send(msg, function(err, info) {
