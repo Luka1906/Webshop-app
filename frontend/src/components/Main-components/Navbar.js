@@ -78,11 +78,18 @@ const Navbar = ({ pathname }) => {
 
             <div className=" flex ">
               <div>
-                <img
+                {
+                  !isMobile? <Link to="signIn"> <img
                   onMouseOver={signInHoverHandler}
                   src={user}
                   alt="signUp-icon"
-                />
+                /></Link> : <img
+                onMouseOver={signInHoverHandler}
+                src={user}
+                alt="signUp-icon"
+              />
+                }
+               
               </div>
 
               {singInPopUp && <SignInPopUp onClose={signInHoverOutHandler} />}
