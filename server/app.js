@@ -5,7 +5,8 @@ const register = require("./routes/register");
 const login = require("./routes/login")
 const stripe = require("./routes/stripe");
 const reset = require("./routes/reset");
-const newPass = require("./routes/new-password")
+const newPass = require("./routes/new-password");
+const path = require('path');
 
 
 require("dotenv").config();
@@ -28,8 +29,9 @@ app.use("/api/stripe", stripe);
 app.use("/api/reset", reset);
 app.use("/api/new-pass/:token/:id", newPass)
 
-
-
+if(process.env.NODE_ENV === "production" || process.env.NODE_ENV ==="staging") {
+  app.use('*', express.static(path.join(__dirname, "client", "build")))
+}
 const port = process.env.PORT || 4000;
 const uri = process.env.DB_URI;
 
