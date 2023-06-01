@@ -18,7 +18,7 @@ const SignIn = () => {
           Sign In
         </h2>
         {invalidInput && (
-          <h2 className="text-center error-message text-lg">{invalidInput}</h2>
+          <h2 className="text-center error-message text-xs md:text-base">{invalidInput}</h2>
         )}
         <div className="mx-auto md:mx-0">
           <div className="mb-2 flex items-center gap-1 relative left-">
@@ -30,7 +30,7 @@ const SignIn = () => {
           <input
             name="email"
             type="email"
-            className="border-gray-300 border p-2 w-[18rem] md:w-[25rem] mb-2 outline-4 outline-stone-600  "
+            className="border-gray-300 border p-2 w-[18rem] md:w-[26rem] mb-2 outline-4 outline-stone-600  "
           />
         </div>
 
@@ -45,11 +45,11 @@ const SignIn = () => {
             <input
               name="password"
               type={show ? "text" : "password"}
-              className="border-gray-300 border p-2 w-[18rem] md:w-[25rem] outline-4 outline-stone-600  "
+              className="border-gray-300 border p-2 w-[18rem] md:w-[26rem] outline-4 outline-stone-600  "
             />
             <div
               onClick={showPasswordHandler}
-              className="absolute top-1/3 right-2 transform text-xs cursor-pointer"
+              className="absolute top-1/3 right-2 transform text-xs cursor-pointer font-semi-bold-lato"
             >
               {show ? "HIDE" : "SHOW"}
             </div>
