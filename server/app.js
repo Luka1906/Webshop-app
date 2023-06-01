@@ -29,9 +29,8 @@ app.use("/api/stripe", stripe);
 app.use("/api/reset", reset);
 app.use("/api/new-pass/:token/:id", newPass)
 
-if(process.env.NODE_ENV === "production" || process.env.NODE_ENV ==="staging") {
-  app.use('*', express.static(path.join(__dirname, "client", "build")))
-}
+app.use('*', express.static(path.join(__dirname, "client", "build")))
+
 const port = process.env.PORT || 4000;
 const uri = process.env.DB_URI;
 
