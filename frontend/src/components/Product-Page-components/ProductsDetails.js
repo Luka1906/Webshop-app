@@ -111,7 +111,7 @@ const ProductsDetails = () => {
      
         <div className="flex flex-col gap-5 px-5 lg:px-0 items-center md:items-start w-[18rem] md:w-[28rem] mx-auto text-justify lg:mt-0 mt-12">
           <div className="text-gray-500">Item {chosenProduct.itemNumber}</div>
-          <div className=" text-paragraph md:text-title text-center">
+          <div className=" text-paragraph text-center font-semi-bold-lato">
             {chosenProduct.description}
           </div>
           <div className="flex gap-1">
