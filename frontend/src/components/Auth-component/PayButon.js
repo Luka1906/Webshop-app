@@ -10,7 +10,7 @@ const PayButton = ({ cartItems }) => {
 
   const handleCheckout = async () => {
     const response = await fetch(
-      "http://localhost:4000/api/stripe/create-checkout-session",
+      `${process.env.REACT_APP_SERVER_URL}/api/stripe/create-checkout-session`,
       {
         method: "POST",
         headers: {
