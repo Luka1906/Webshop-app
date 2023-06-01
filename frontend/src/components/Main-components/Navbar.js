@@ -9,12 +9,11 @@ import { cartAnimation } from "../../animations/Cart-animation";
 import SignInPopUp from "../SingIn-components/SignInPopUp";
 import { Form } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
-
+import useDidMountEffect from "../../hooks/use-didMountEffect";
 
 import { useMediaQuery } from "@mui/material";
 
 const Navbar = ({ pathname }) => {
-  
   const token = useRouteLoaderData("root");
 
   const cartContext = useContext(CartContext);
@@ -25,10 +24,7 @@ const Navbar = ({ pathname }) => {
   const [cartIsAnimated, setCartIsAnimated] = useState(false);
   const [singInPopUp, setSignInPopUp] = useState(false);
 
-  useEffect(() => {
-    if (cartContext.items.length === 0) {
-      return;
-    }
+  useDidMountEffect(() => {
     setCartIsAnimated(true);
     const timer = setTimeout(() => {
       setCartIsAnimated(false);
@@ -60,46 +56,56 @@ const Navbar = ({ pathname }) => {
               <Logo />
             </Link>
           </div>
-            <div className="flex items-center gap-5 md:static absolute right-[-1rem] top-[2.4rem]">
-              <NavLink
-                className={({ isActive }) => (isActive ? "border-b-2 border-primary-color-red" : undefined)}
-                to="/"
-              >
-                {isMobile? "" : <p>Home</p>}
-              </NavLink>
-              <NavLink
-                className={({ isActive }) => (isActive ? `${isMobile? "" : "border-b-2 border-primary-color-red" }` : undefined)}
-                to="products"
-              >
-               {isMobile? <BsSearch className="text-2xl"/> : <p>Categories</p>} 
-              </NavLink>
+          <div className="flex items-center gap-5 md:static absolute right-[-1rem] top-[2.4rem]">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "border-b-2 border-primary-color-red" : undefined
+              }
+              to="/"
+            >
+              {isMobile ? "" : <p>Home</p>}
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? `${isMobile ? "" : "border-b-2 border-primary-color-red"}`
+                  : undefined
+              }
+              to="products"
+            >
+              {isMobile ? <BsSearch className="text-2xl" /> : <p>Categories</p>}
+            </NavLink>
 
-              <div className=" flex ">
-                <div>
-                  <img
-                    onMouseOver={signInHoverHandler}
-                    src={user}
-                    alt="signUp-icon"
-                  />
-                </div>
-
-                {singInPopUp && <SignInPopUp onClose={signInHoverOutHandler} />}
+            <div className=" flex ">
+              <div>
+                <img
+                  onMouseOver={signInHoverHandler}
+                  src={user}
+                  alt="signUp-icon"
+                />
               </div>
-              {token ? (
-                <Form action="logout" method="POST">
-           {isMobile? "" : <button className="cursor-pointer">Sign out</button> } 
-                </Form>
-              ) : (
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "border-b-2 border-primary-color-red" : undefined
-                  }
-                  to="signIn"
-                >
-         {isMobile? "" : <p>Sign in</p> } 
-                </NavLink>
-              )}
-                  <div
+
+              {singInPopUp && <SignInPopUp onClose={signInHoverOutHandler} />}
+            </div>
+            {token ? (
+              <Form action="logout" method="POST">
+                {isMobile ? (
+                  ""
+                ) : (
+                  <button className="cursor-pointer">Sign out</button>
+                )}
+              </Form>
+            ) : (
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "border-b-2 border-primary-color-red" : undefined
+                }
+                to="signIn"
+              >
+                {isMobile ? "" : <p>Sign in</p>}
+              </NavLink>
+            )}
+            <div
               className="flex items-center cursor-pointer md:static relative right-4  "
               onClick={cartContext.openCartHandler}
             >
@@ -111,11 +117,15 @@ const Navbar = ({ pathname }) => {
                 alt="cart"
                 className=""
               />
-             { numberOfCartItems <=99 ? <p className="relative text-sm  right-6 top-0.5 text-center w-5 ">
-                {numberOfCartItems}
-              </p> : <p className="ml-2 mr-2 text-sm">({numberOfCartItems})</p>}
+              {numberOfCartItems <= 99 ? (
+                <p className="relative text-sm  right-6 top-0.5 text-center w-5 ">
+                  {numberOfCartItems}
+                </p>
+              ) : (
+                <p className="ml-2 mr-2 text-sm">({numberOfCartItems})</p>
+              )}
             </div>
-            </div>
+          </div>
         </nav>
       </div>
     </div>
