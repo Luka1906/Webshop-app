@@ -52,7 +52,7 @@ const Product = ({
             className={`${
               discount > 0
                 ? `text-text-color line-through`
-                : `text-primary-color-red`
+                : `text-primary-color-red relative right-2`
             }  md:text-lg font-semi-bold-lato`}
           >{`$${price}`}</p>
         </div>
