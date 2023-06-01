@@ -66,7 +66,7 @@ const ProductsDetails = () => {
   return (
     <>
 
-      <div className="w-screen flex flex-col items-center lg:flex-row">
+      <div className="w-screen flex flex-col items-center lg:flex-row lg:mt-7">
         <div>
         <Link to="/products">
         <div className="flex gap-1 items-center mb-2 md:mt-0 mt-24 text-xs px-10 hover:underline">
