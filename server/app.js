@@ -10,7 +10,8 @@ const newPass = require("./routes/new-password")
 
 require("dotenv").config();
 
-app.use(express.urlencoded({ extended: true }));
+
+app.use(express.urlencoded({ extended: true }))
 app.use(express.json());
 
 
