@@ -170,7 +170,7 @@ const ProductsDetails = () => {
               {chosenProduct.details.specification}
             </p>
           </div>
-          <AddToCartButton quantity={quantity} onAddToCart={addToCartHandler} />
+          <AddToCartButton  onAddToCart={addToCartHandler} />
         </div>
       </div>
     </>

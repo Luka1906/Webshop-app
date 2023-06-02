@@ -1,13 +1,10 @@
-import { useEffect } from "react";
+
 
 const AddToCartButton = ({onAddToCart}) => {
   const addItemHandler = () => {
     onAddToCart()
-  }
-  useEffect(() => {
     window.scrollTo({ top: 0 });
-  }, [onAddToCart]);
-  
+  }
 
   
     return (

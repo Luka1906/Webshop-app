@@ -12,7 +12,7 @@ const MainPage = () => {
 
 return (
     <>
-    <div className="  bottom-[20vh] flex bg-main-wallpaper shadow-background-shadow w-screen  bg-cover justify-start items-end r h-[70vh] md:h-[100vh] bg-center">
+    <div className=" bottom-[20vh] flex bg-main-wallpaper shadow-background-shadow w-screen  bg-cover justify-start items-end   h-[60vh] md:h-[100vh] bg-center">
 
         <div className=" text-[1rem] md:text[1.3rem]  mx-auto my-7 md:my-20 text-slate-50 opacity-90">
         <Link to="products">
