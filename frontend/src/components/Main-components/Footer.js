@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
-  faTwitter,
+  faXTwitter,
   faFacebook,
   faYoutube,
   faPinterest,
 } from "@fortawesome/free-brands-svg-icons";
 import LogoBlack from "./LogoBlack";
+
 import { SlArrowDown } from "react-icons/sl";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "@mui/material";
@@ -147,7 +148,7 @@ const Footer = () => {
       </div>
       <div className=" flex justify-center h-20 items-end gap-3 text-paragraph">
         <FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faTwitter} />
+        <FontAwesomeIcon icon={faXTwitter} />
         <FontAwesomeIcon icon={faFacebook} />
         <FontAwesomeIcon icon={faYoutube} />
         <FontAwesomeIcon icon={faPinterest} />
