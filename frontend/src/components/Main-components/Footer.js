@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 import { useMediaQuery } from "@mui/material";
 
 const Footer = () => {
-  const windowScreen = useMediaQuery("(max-width:576px)");
+  const windowScreen = useMediaQuery("(max-width:575px)");
   const [isMobile, setIsMobile] = useState(false);
   const [footerHidden, setFooterHidden] = useState(true);
   const [footerHidden1, setFooterHidden1] = useState(true);
@@ -53,11 +53,11 @@ const Footer = () => {
   };
 
   return (
-    <div className=" bg-bg-color shadow-image-shadow  md:h-[82vh] relative top-6">
-      <div className=" text-[0.7rem] xs:flex md:flex md:justify-around relative top-6">
+    <div className=" bg-bg-color h-[90vh]  shadow-image-shadow  mt-20">
+      <div className=" text-[0.7rem] flex flex-col xs:flex-row justify-around relative top-6">
         <div className=" flex flex-col gap-4 px-10 pt-8 md:p-0 ">
           <div className="flex justify-between">
-            <h2 className="font-semi-bold-lato text-[0.9rem] sm:text-[0.7rem] ">SHOP</h2>
+            <h2 className="font-semi-bold-lato text-[0.9rem] xs:text-[0.7rem] ">SHOP</h2>
             {isMobile && (
               <SlArrowDown
                 onClick={footerVisibilityHandler}
@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
         <div className=" flex flex-col gap-4 px-10 pt-8 md:p-0 ">
           <div className="flex justify-between">
-            <h2 className=" font-semi-bold-lato text-[0.9rem] sm:text-[0.7rem]">INFO</h2>
+            <h2 className=" font-semi-bold-lato text-[0.9rem] xs:text-[0.7rem]">INFO</h2>
             {isMobile && (
               <SlArrowDown
                 onClick={footerVisibilityHandler1}
@@ -102,7 +102,7 @@ const Footer = () => {
 
         <div className="flex flex-col gap-4 px-10 pt-8 md:p-0">
           <div className="flex justify-between">
-            <h2 className="font-semi-bold-lato text-[0.9rem] sm:text-[0.7rem]">HELP</h2>
+            <h2 className="font-semi-bold-lato text-[0.9rem] xs:text-[0.7rem]">HELP</h2>
             {isMobile && (
               <SlArrowDown
                 onClick={footerVisibilityHandler2}
@@ -127,7 +127,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-4 px-10 pt-8 md:p-0 ">
           <div className="flex justify-between">
-            <h2 className="font-semi-bold-lato text-[0.9rem] sm:text-[0.7rem]">CONTACT</h2>
+            <h2 className="font-semi-bold-lato text-[0.9rem] xs:text-[0.7rem]">CONTACT</h2>
             {isMobile && (
               <SlArrowDown
                 onClick={footerVisibilityHandler3}
