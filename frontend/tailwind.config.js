@@ -35,7 +35,7 @@ module.exports = {
         paragraph: "1.2rem",
       },
       fontFamily: {
-        lato: ["Lato", "sans-serif"],
+        "lato": ["Lato", "sans-serif"],
         "bold-lato": ["Bold-Lato", "sans-serif"],
         "semi-bold-lato": ["Semi-Bold-Lato", "sans-seri"],
       },
